@@ -1,0 +1,13 @@
+{
+  "name": "gan",
+  "main": "index.js",
+  "authors": [
+    "Mike Ivonin <Michael@drummer.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Michael-Ivonin/GanForApptech",
+  "private": true,
+  "dependencies": {
+    "reset-css": "^2.2.0"
+  }
+}
