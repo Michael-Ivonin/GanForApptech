@@ -1,44 +1,117 @@
 doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    //base(href='http://.../')
-    link(rel='icon', href='favicon.ico')
-    title Starter Template for Bootstrap
-    link(href='css/libs.min.css', rel='stylesheet')
-    link(href='css/main.css', rel='stylesheet')
-  body
-    .navbar.navbar-inverse.navbar-fixed-top(role='navigation')
-      .container
-        .navbar-header
-          button.navbar-toggle(type='button', data-toggle='collapse', data-target='navbar-collapse')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href='#') Project name
-        .collapse.navbar-collapse
-          ul.nav.navbar-nav
-            li.active
-              a(href='#') Home
-            li
-              a(href='#about') About
-            li
-              a(href='#contact') Contact
-        // /.nav-collapse
+html(lang='ru')
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  //base(href='http://.../')
+  //link(rel='icon', href='favicon.ico')
+  title Gan
+  link(href='css/libs.min.css', rel='stylesheet')
+  link(href='css/main.css', rel='stylesheet')
+body
+  .greeting
     .container
-      .starter-template
-        h1 Bootstrap starter template
-        p.lead
-          | Use this document as a way to quickly start any new project.
-          br
-          |  All you get is this text and a mostly barebones HTML document.
+      .navbar-header.greeting__header
+        button.navbar-toggle.collapsed.greeting__header-button(type='button',
+        data-toggle='collapse', data-target='#menu')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand.greeting__header-logoLink(href='#') Project name
+      // /.greeting__header
+      .collapse.navbar-collapse#menu
+        ul.nav.navbar-nav.greeting__header-menu
+          li.greeting__header-menuItem
+            a.greeting__header-menuItem-link(href='#') О компании
+          li.greeting__header-menuItem
+            a.greeting__header-menuItem-link(href='#') Возможности
+          li.greeting__header-menuItem
+            a.greeting__header-menuItem-link(href='#') Корпоративным клиентам
+        // /.greeting__header-menu
+        .greeting__header-info
+          i.greeting__header-infoIconPhone
+          p.greeting__header-infoNumber 8&nbsp;800&nbsp;900&nbsp;77&nbsp;77
+          p.greeting__header-infoText 24/7. Бесплатно по РФ
+        // /.greeting__header-info
+        form.greeting__header-entrance
+          i.greeting__header-entranceIconLogin
+          button.greeting__header-entranceButton(type='button')
+            span Войти
+            i.greeting__header-entranceButton-iconEnter
+      // /.navbar-collapse
+      .greeting__presentation
+        p.greeting__presentationText Берем всю организацию на себя
+        h1.greeting__presentationHeading Командировка
+      // /.greeting__presentation
+      .greeting__form
+        h5.greeting__formHeading Поиск лучшего варианта вашей деловой поездки:
+        form.searchForm
+          .searchForm__inputCities
+            label.searchForm__inputCities-text(for='inputCity1') Город отправления
+            p
+              input.searchForm__inputCities-inputText(type='text', placeholder='Омск', id='inputCity1', required)
+            i.searchForm__inputCities-iconArrow
+            label.searchForm__inputCities-text(for='inputCity2') Город назначения
+            p
+              input.searchForm__inputCities-inputText(type='text', placeholder='Москва', id='inputCity2', required)
+            i.searchForm__inputCities-iconReset
+          // /.searchForm__inputCities
+          .searchForm__inputDate
+            label.searchForm__inputDate-text Туда
+            p
+              input.searchForm__inputDate-inputDay(type='text', placeholder='06/03/17', required)
+            i.searchForm__inputDate-iconArrow
+            label.searchForm__inputDate-text Обратно
+            p
+              input.searchForm__inputDate-inputDay(type='text', placeholder='14/03/17', required)
+            i.searchForm__inputDate-iconCalendar
+          // /.searchForm__inputDate
+          .searchForm__inputQuantity
+            p.searchForm__inputQuantity-text Сотрудников
+            i.searchForm__inputQuantity-iconPerson
+            p
+              select.searchForm__inputQuantity-inputNumber(required)
+                option.searchForm__inputQuantity-inputNumber-item 1
+                option.searchForm__inputQuantity-inputNumber-item(selected) 2
+                option.searchForm__inputQuantity-inputNumber-item 3
+                option.searchForm__inputQuantity-inputNumber-item 4
+                option.searchForm__inputQuantity-inputNumber-item 5
+              // /.searchForm__inputQuantity-inputNumber
+          // /.searchForm__inputQuantity
+          button.searchForm__buttonFind(type='submit')
+            span Подобрать
+            i.searchForm__buttonFind-iconEnter
+        // /.searchForm
+        .greeting__socials
+          i.greeting__socials-iconTwitter
+          i.greeting__socials-iconInstagram
+          i.greeting__socials-iconFacebook
+          i.greeting__socials-iconGooglePlus
+        // /.greeting__socials
+        .greeting__services
+          .greeting__services-item
+            i.greeting__services-itemIconTicket
+            p.greeting__services-itemText
+          .greeting__services-item
+            i.greeting__services-itemIconResidence
+            p.greeting__services-itemText
+          .greeting__services-item
+            i.greeting__services-itemIconTransfer
+            p.greeting__services-itemText
+          .greeting__services-item
+            i.greeting__services-itemIconInsurance
+            p.greeting__services-itemText
+          .greeting__services-item
+            i.greeting__services-itemIconReport
+            p.greeting__services-itemText
+        // /.greeting__services
     // /.container
+  // /.greeting
 
-    // Bootstrap core JavaScript
-    // ==================================================
-    // Placed at the end of the document so the pages load faster
-    //script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-    //script(src='/dist/js/bootstrap.min.js')
+  // Bootstrap core JavaScript
+  // ==================================================
+  //script(src='libs/jquery/dist/jquery.min.js')
+  //script(src='libs/bootstrap/dist/js/bootstrap.min.js')
+  script(src='js/libs.min.js')

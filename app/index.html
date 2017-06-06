@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--base(href='http://.../')-->
+  <!--link(rel='icon', href='favicon.ico')-->
+  <title>Gan</title>
+  <link href="css/libs.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="greeting">
+    <div class="container">
+      <div class="navbar-header greeting__header">
+        <button class="navbar-toggle collapsed greeting__header-button" type="button" data-toggle="collapse" data-target="#menu"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand greeting__header-logoLink" href="#">Project name</a>
+      </div>
+      <!-- /.greeting__header-->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav greeting__header-menu">
+          <li class="greeting__header-menuItem"><a class="greeting__header-menuItem-link" href="#">О компании</a></li>
+          <li class="greeting__header-menuItem"><a class="greeting__header-menuItem-link" href="#">Возможности</a></li>
+          <li class="greeting__header-menuItem"><a class="greeting__header-menuItem-link" href="#">Корпоративным клиентам</a></li>
+        </ul>
+        <!-- /.greeting__header-menu-->
+        <div class="greeting__header-info"><i class="greeting__header-infoIconPhone"></i>
+          <p class="greeting__header-infoNumber">8&nbsp;800&nbsp;900&nbsp;77&nbsp;77</p>
+          <p class="greeting__header-infoText">24/7. Бесплатно по РФ</p>
+        </div>
+        <!-- /.greeting__header-info-->
+        <form class="greeting__header-entrance"><i class="greeting__header-entranceIconLogin"></i>
+          <button class="greeting__header-entranceButton" type="button"><span>Войти</span><i class="greeting__header-entranceButton-iconEnter"></i></button>
+        </form>
+      </div>
+      <!-- /.navbar-collapse-->
+      <div class="greeting__presentation">
+        <p class="greeting__presentationText">Берем всю организацию на себя</p>
+        <h1 class="greeting__presentationHeading">Командировка</h1>
+      </div>
+      <!-- /.greeting__presentation-->
+      <div class="greeting__form">
+        <h5 class="greeting__formHeading">Поиск лучшего варианта вашей деловой поездки:</h5>
+        <form class="searchForm">
+          <div class="searchForm__inputCities">
+            <label class="searchForm__inputCities-text" for="inputCity1">Город отправления</label>
+            <p>
+              <input class="searchForm__inputCities-inputText" type="text" placeholder="Омск" id="inputCity1" required>
+            </p><i class="searchForm__inputCities-iconArrow"></i>
+            <label class="searchForm__inputCities-text" for="inputCity2">Город назначения</label>
+            <p>
+              <input class="searchForm__inputCities-inputText" type="text" placeholder="Москва" id="inputCity2" required>
+            </p><i class="searchForm__inputCities-iconReset"></i>
+          </div>
+          <!-- /.searchForm__inputCities-->
+          <div class="searchForm__inputDate">
+            <label class="searchForm__inputDate-text">Туда</label>
+            <p>
+              <input class="searchForm__inputDate-inputDay" type="text" placeholder="06/03/17" required>
+            </p><i class="searchForm__inputDate-iconArrow"></i>
+            <label class="searchForm__inputDate-text">Обратно</label>
+            <p>
+              <input class="searchForm__inputDate-inputDay" type="text" placeholder="14/03/17" required>
+            </p><i class="searchForm__inputDate-iconCalendar"></i>
+          </div>
+          <!-- /.searchForm__inputDate-->
+          <div class="searchForm__inputQuantity">
+            <p class="searchForm__inputQuantity-text">Сотрудников</p><i class="searchForm__inputQuantity-iconPerson"></i>
+            <p>
+              <select class="searchForm__inputQuantity-inputNumber" required>
+                <option class="searchForm__inputQuantity-inputNumber-item">1</option>
+                <option class="searchForm__inputQuantity-inputNumber-item" selected>2</option>
+                <option class="searchForm__inputQuantity-inputNumber-item">3</option>
+                <option class="searchForm__inputQuantity-inputNumber-item">4</option>
+                <option class="searchForm__inputQuantity-inputNumber-item">5</option>
+              </select>
+              <!-- /.searchForm__inputQuantity-inputNumber-->
+            </p>
+          </div>
+          <!-- /.searchForm__inputQuantity-->
+          <button class="searchForm__buttonFind" type="submit"><span>Подобрать</span><i class="searchForm__buttonFind-iconEnter"></i></button>
+        </form>
+        <!-- /.searchForm-->
+        <div class="greeting__socials"><i class="greeting__socials-iconTwitter"></i><i class="greeting__socials-iconInstagram"></i><i class="greeting__socials-iconFacebook"></i><i class="greeting__socials-iconGooglePlus"></i></div>
+        <!-- /.greeting__socials-->
+        <div class="greeting__services">
+          <div class="greeting__services-item"><i class="greeting__services-itemIconTicket"></i>
+            <p class="greeting__services-itemText"></p>
+          </div>
+          <div class="greeting__services-item"><i class="greeting__services-itemIconResidence"></i>
+            <p class="greeting__services-itemText"></p>
+          </div>
+          <div class="greeting__services-item"><i class="greeting__services-itemIconTransfer"></i>
+            <p class="greeting__services-itemText"></p>
+          </div>
+          <div class="greeting__services-item"><i class="greeting__services-itemIconInsurance"></i>
+            <p class="greeting__services-itemText"></p>
+          </div>
+          <div class="greeting__services-item"><i class="greeting__services-itemIconReport"></i>
+            <p class="greeting__services-itemText"></p>
+          </div>
+        </div>
+        <!-- /.greeting__services-->
+      </div>
+    </div>
+    <!-- /.container-->
+  </div>
+  <!-- /.greeting-->
+  <!-- Bootstrap core JavaScript-->
+  <!-- ==================================================-->
+  <!--script(src='libs/jquery/dist/jquery.min.js')-->
+  <!--script(src='libs/bootstrap/dist/js/bootstrap.min.js')-->
+  <script src="js/libs.min.js"></script>
+</body>

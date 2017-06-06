@@ -25,7 +25,7 @@ gulp.task('pug', function buildHTML() {
     .pipe(changed('./app', {extension: '.html'}))
     .pipe(pug({pretty: true}))
     .pipe(gulp.dest('./app'))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream(/*{match: '**//*.html'}*/));
 });
 
 // Sass + autoprefixer
@@ -51,7 +51,8 @@ gulp.task('browser-sync', function() {
 // Libs.min.js
 gulp.task('scripts', function() {
   return gulp.src([
-    //'./app/libs/jquery/dist/jquery.min.js'
+    './app/libs/jquery/dist/jquery.min.js',
+    './app/libs/bootstrap/dist/js/bootstrap.min.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
