@@ -1,2 +1,220 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900; }
+
 body {
-  background: white; }
+  font-family: 'Roboto', sans-serif; }
+
+.greeting {
+  background: url(../img/greeting-bg.jpg) no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.greeting__header {
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19);
+          box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19); }
+
+.greeting__header-logoLink {
+  display: block;
+  background: url(../img/logo.svg);
+  width: 210px;
+  height: 57px;
+  margin: 11px 155px 0 0; }
+
+.greeting__header-menu {
+  margin-top: 35px;
+  margin-right: 87px; }
+
+.navbar-nav > li > a, .nav > li > a {
+  padding: 0 16px;
+  line-height: inherit; }
+
+.greeting__header-menuItem-link {
+  font-size: 0.938rem;
+  color: #1f1a17; }
+
+.greeting__header-info {
+  display: inline-block;
+  float: left;
+  margin-top: 29px;
+  margin-right: 23px; }
+
+.greeting__header-infoNumber {
+  font-size: 1.125rem;
+  color: #2c2c2c;
+  font-weight: 500;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px; }
+
+.greeting__header-infoText {
+  font-size: 0.563rem;
+  color: #a1a1a1;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.67px; }
+
+.greeting__header-entrance {
+  display: inline-block;
+  height: 81px;
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  padding: 28px 34px 0 25px; }
+
+.greeting__header-entranceButton, .searchForm__buttonFind {
+  border: none;
+  outline: none;
+  background: none; }
+
+.greeting__header-entranceButton {
+  font-size: 1rem;
+  color: #2c2c2c;
+  margin-top: 7px; }
+
+.greeting__presentation {
+  text-align: center; }
+
+.greeting__presentationText {
+  display: inline-block;
+  margin-top: 156px;
+  margin-bottom: 26px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #ffc816;
+  letter-spacing: 3.64px; }
+
+.greeting__presentationHeading {
+  text-transform: uppercase;
+  font-size: 4.688rem;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 17.55px;
+  margin-bottom: 71px; }
+
+.greeting__form {
+  text-align: center; }
+
+.greeting__formHeading {
+  font-size: 1.25rem;
+  color: white;
+  letter-spacing: -0.31px;
+  margin-bottom: 43px; }
+
+.searchForm {
+  display: inline-block;
+  text-align: initial;
+  -webkit-box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15); }
+
+.searchForm__inputCityDeparture, .searchForm__inputCityArrive, .searchForm__inputDate, .searchForm__inputQuantity {
+  float: left;
+  background: white;
+  -webkit-border-radius: 5px 0 0 5px;
+          border-radius: 5px 0 0 5px;
+  padding: 10px 18px 14px 16px; }
+
+.searchForm__inputCityDeparture-text, .searchForm__inputCityArrive-text, .searchForm__inputDate-text, .searchForm__inputQuantity-text {
+  font-size: 0.813rem;
+  color: dimgray;
+  font-weight: 300;
+  margin-bottom: 11px; }
+
+.searchForm__inputCityDeparture-inputText, .searchForm__inputCityArrive-inputText, .searchForm__inputDate-inputDay {
+  width: 156px;
+  height: 13px;
+  font-size: 1rem;
+  color: black;
+  border: none;
+  outline: none; }
+  .searchForm__inputCityDeparture-inputText::-webkit-input-placeholder, .searchForm__inputCityArrive-inputText::-webkit-input-placeholder, .searchForm__inputDate-inputDay::-webkit-input-placeholder {
+    color: #2c2c2c; }
+  .searchForm__inputCityDeparture-inputText::-moz-placeholder, .searchForm__inputCityArrive-inputText::-moz-placeholder, .searchForm__inputDate-inputDay::-moz-placeholder {
+    color: #2c2c2c; }
+  .searchForm__inputCityDeparture-inputText:-moz-placeholder, .searchForm__inputCityArrive-inputText:-moz-placeholder, .searchForm__inputDate-inputDay:-moz-placeholder {
+    color: #2c2c2c; }
+  .searchForm__inputCityDeparture-inputText:-ms-input-placeholder, .searchForm__inputCityArrive-inputText:-ms-input-placeholder, .searchForm__inputDate-inputDay:-ms-input-placeholder {
+    color: #2c2c2c; }
+
+.searchForm__inputCityArrive, .searchForm__inputDate, .searchForm__inputQuantity {
+  -webkit-border-radius: 0;
+          border-radius: 0; }
+
+.searchForm__inputDate {
+  padding: 10px 11px 14px 16px;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1; }
+  .searchForm__inputDate .wrap_there {
+    float: left; }
+  .searchForm__inputDate .wrap_back {
+    float: left; }
+
+.searchForm__inputQuantity {
+  padding: 10px 10px 11px 16px; }
+
+.searchForm__inputQuantity-inputNumber {
+  width: 151px;
+  font-size: 0.938rem;
+  color: #2c2c2c;
+  border: none;
+  outline: none; }
+
+.searchForm__buttonFind {
+  background: #ffc816;
+  -webkit-border-radius: 0 5px 5px 0;
+          border-radius: 0 5px 5px 0;
+  padding: 25px 27px 25px 38px; }
+  .searchForm__buttonFind span {
+    font-size: 0.813rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 17px;
+    letter-spacing: 1.32px; }
+
+.greeting__socials {
+  float: right; }
+
+.greeting__services {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px; }
+
+.greeting__services-itemText {
+  font-size: 0.938rem;
+  color: white;
+  margin: 0 41px; }

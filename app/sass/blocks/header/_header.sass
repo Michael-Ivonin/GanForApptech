@@ -1,0 +1,107 @@
+.greeting
+  background: url(../img/greeting-bg.jpg) no-repeat
+  background-position: center
+  background-size: cover
+  //height: 100vh
+
+.greeting__header
+  width: 100%
+  background-color: $white
+  box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19)
+
+.greeting__header-logoLink
+  display: block
+  background: url(../img/logo.svg)
+  width: 210px
+  height: 57px
+  margin: 11px 155px 0 0
+
+.greeting__header-menu
+  margin-top: 35px
+  margin-right: 87px
+
+.navbar-nav>li>a, .nav>li>a
+  padding: 0 16px
+  line-height: inherit
+
+
+.greeting__header-menuItem-link
+  font-size: 0.938rem
+  color: $black4
+
+.greeting__header-info
+  display: inline-block
+  float: left
+  margin-top: 29px
+  margin-right: 23px
+
+.greeting__header-infoNumber
+  font-size: 1.125rem
+  color: $grey9
+  font-weight: 500
+  margin-bottom: 8px
+  letter-spacing: 0.5px
+
+.greeting__header-infoText
+  font-size: 0.563rem
+  color: $grey2
+  text-transform: uppercase
+  text-align: center
+  letter-spacing: 1.67px
+
+.greeting__header-entrance
+  display: inline-block
+  height: 81px
+  border-left: 1px solid $darkWhite
+  border-right: 1px solid $darkWhite
+  padding: 28px 34px 0 25px
+
+%btn-default
+  border: none
+  outline: none
+  background: none
+
+.greeting__header-entranceButton
+  @extend %btn-default
+  font-size: 1rem
+  color: $grey9
+  margin-top: 7px
+
+.greeting__presentation
+  text-align: center
+
+.greeting__presentationText
+  display: inline-block
+  margin-top: 156px
+  margin-bottom: 26px
+  text-transform: uppercase
+  font-size: 1rem
+  font-weight: 900
+  color: $yellow
+  letter-spacing: 3.64px
+
+.greeting__presentationHeading
+  text-transform: uppercase
+  font-size: 4.688rem
+  color: $white
+  font-weight: 900
+  letter-spacing: 17.55px
+  margin-bottom: 71px
+
+.greeting__form
+  text-align: center
+
+.greeting__formHeading
+  font-size: 1.25rem
+  color: $white
+  letter-spacing: -0.31px
+  margin-bottom: 43px
+
+// Include _header__searchForm.sass
+@import "header__searchForm"
+
+.greeting__socials
+  float: right
+
+// Include _header__services.sass
+@import "header__services"

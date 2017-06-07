@@ -21,8 +21,8 @@ const gulp = require('gulp'),
 
 // Pug
 gulp.task('pug', function buildHTML() {
-  return gulp.src('./app/pug/**/*.pug')
-    .pipe(changed('./app', {extension: '.html'}))
+  return gulp.src('./app/pug/pages/**/*.pug')
+    /*.pipe(changed('./app', {extension: '.html'}))*/
     .pipe(pug({pretty: true}))
     .pipe(gulp.dest('./app'))
     .pipe(browserSync.stream(/*{match: '**//*.html'}*/));
@@ -31,7 +31,7 @@ gulp.task('pug', function buildHTML() {
 // Sass + autoprefixer
 gulp.task('sass', function() {
   return gulp.src('./app/sass/**/*.sass')
-    .pipe(changed('./app/css', {extension: '.css'}))
+    /*.pipe(changed('./app/css', {extension: '.css'}))*/
     .pipe(sass())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(gulp.dest('./app/css'))

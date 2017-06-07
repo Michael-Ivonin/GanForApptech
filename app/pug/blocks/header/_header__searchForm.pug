@@ -1,0 +1,41 @@
+form.searchForm
+  .searchForm__inputCityDeparture
+    label.searchForm__inputCityDeparture-text(for='inputCity1') Город отправления
+    br
+    input.searchForm__inputCityDeparture-inputText(type='text', placeholder='Омск', id='inputCity1', required)
+    i.searchForm__inputCityDeparture-iconArrow.hidden-xs
+    i.searchForm__inputCityDeparture-iconReset.visible-xs
+  // /.searchForm__inputCityDeparture
+  .searchForm__inputCityArrive
+    label.searchForm__inputCityArrive-text(for='inputCity2') Город назначения
+    br
+    input.searchForm__inputCityArrive-inputText(type='text', placeholder='Москва', id='inputCity2', required)
+    i.searchForm__inputCityArrive-iconReset
+  // /.searchForm__inputCityArrive
+  .searchForm__inputDate
+    .wrap_there
+      label.searchForm__inputDate-text Туда
+      br
+      input.searchForm__inputDate-inputDay(type='text', placeholder='06/03/17', required)
+    i.searchForm__inputDate-iconArrow
+    .wrap_back
+      label.searchForm__inputDate-text Обратно
+      br
+      input.searchForm__inputDate-inputDay(type='text', placeholder='14/03/17', required)
+    i.searchForm__inputDate-iconCalendar
+  // /.searchForm__inputDate
+  .searchForm__inputQuantity
+    p.searchForm__inputQuantity-text Сотрудников
+    i.searchForm__inputQuantity-iconPerson
+    select.searchForm__inputQuantity-inputNumber(required)
+      option.searchForm__inputQuantity-inputNumber-item 1
+      option.searchForm__inputQuantity-inputNumber-item(selected) 2
+      option.searchForm__inputQuantity-inputNumber-item 3
+      option.searchForm__inputQuantity-inputNumber-item 4
+      option.searchForm__inputQuantity-inputNumber-item 5
+    // /.searchForm__inputQuantity-inputNumber
+  // /.searchForm__inputQuantity
+  button.searchForm__buttonFind(type='submit')
+    span Подобрать
+    i.searchForm__buttonFind-iconEnter
+// /.searchForm

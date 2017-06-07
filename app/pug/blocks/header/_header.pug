@@ -1,0 +1,52 @@
+.greeting
+  .navbar-header.greeting__header
+    .container
+      button.navbar-toggle.collapsed.greeting__header-button(type='button', data-toggle='collapse',
+      data-target='#menu')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+        br
+      a.navbar-brand.greeting__header-logoLink(href='#')
+      .collapse.navbar-collapse#menu
+        ul.nav.navbar-nav.greeting__header-menu
+          li.greeting__header-menuItem
+            a.greeting__header-menuItem-link(href='#') О компании
+          li.greeting__header-menuItem
+            a.greeting__header-menuItem-link(href='#') Возможности
+          li.greeting__header-menuItem
+            a.greeting__header-menuItem-link(href='#') Корпоративным клиентам
+        // /.greeting__header-menu
+        .greeting__header-info
+          i.greeting__header-infoIconPhone
+          p.greeting__header-infoNumber 8&nbsp;800&nbsp;900&nbsp;77&nbsp;77
+          p.greeting__header-infoText 24/7. Бесплатно по РФ
+        // /.greeting__header-info
+        form.greeting__header-entrance
+          i.greeting__header-entranceIconLogin
+          button.greeting__header-entranceButton(type='button')
+            span Войти
+            i.greeting__header-entranceButton-iconEnter
+        // /.greeting__header-entrance
+      // /.navbar-collapse
+    // /.container
+  // /.greeting__header
+  .container
+    .greeting__presentation
+      p.greeting__presentationText Берем всю организацию на себя
+      h1.greeting__presentationHeading Командировка
+    // /.greeting__presentation
+    .greeting__form
+      h5.greeting__formHeading Поиск лучшего варианта вашей деловой поездки:
+      include _header__searchForm
+    // /.greeting__form
+    .greeting__socials
+      i.greeting__socials-iconTwitter
+      i.greeting__socials-iconInstagram
+      i.greeting__socials-iconFacebook
+      i.greeting__socials-iconGooglePlus
+    // /.greeting__socials
+    include _header__services
+  // /.container
+// /.greeting
