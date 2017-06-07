@@ -13,6 +13,7 @@ const gulp = require('gulp'),
       uglify = require('gulp-uglifyjs'),
       cssnano = require('gulp-cssnano'),
       rename = require('gulp-rename'),
+      svgSprite = require('gulp-svg-sprites'),
       del = require('del'),
       imagemin = require('gulp-imagemin'),
       pngquant = require('imagemin-pngquant'),
@@ -73,6 +74,21 @@ gulp.task('watch', ['browser-sync', 'pug', 'css-libs', 'scripts'], function() {
   gulp.watch('./app/sass/**/*.sass', ['sass']);
   //gulp.watch('./app/*.html').on('change', browserSync.reload);
   gulp.watch('./app/js/**/*.js', browserSync.reload);
+});
+
+// svgSprite
+gulp.task('svg', function() {
+  return gulp.src('./app/img/svg/*.svg')
+    .pipe(svgSprite({
+      svg: {
+        sprite: '../img/_svg-sprite.svg'
+      },
+      cssFile: '../sass/_svg-sprite.scss',
+      svgPath: '%f',
+      pngPath: '%f'
+      //padding: 2
+    }))
+    .pipe(gulp.dest('./app/img'));
 });
 
 // Clean dist

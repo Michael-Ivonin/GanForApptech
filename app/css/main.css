@@ -35,20 +35,14 @@ body {
   background: url(../img/greeting-bg.jpg) no-repeat;
   background-position: center;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  height: 100vh; }
 
 .greeting__header {
   width: 100%;
   background-color: white;
   -webkit-box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19);
           box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19); }
-
-.greeting__header-logoLink {
-  display: block;
-  background: url(../img/logo.svg);
-  width: 210px;
-  height: 57px;
-  margin: 11px 155px 0 0; }
 
 .greeting__header-menu {
   margin-top: 35px;
@@ -218,3 +212,28 @@ body {
   font-size: 0.938rem;
   color: white;
   margin: 0 41px; }
+
+.icon {
+  font-size: 10px; }
+
+.icon:before {
+  content: ' ';
+  vertical-align: middle;
+  display: inline-block;
+  background-image: url("../img/_svg-sprite.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 21em 5.7em;
+          background-size: 21em 5.7em; }
+
+.no-svg .icon:before {
+  background-image: url("../img/_svg-sprite.png"); }
+
+.icon.logo:before {
+  background-position: 0em 0em;
+  width: 21em;
+  height: 5.7em; }
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1240px;
+    padding: 0; } }
