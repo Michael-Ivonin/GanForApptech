@@ -1,0 +1,155 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../img/svg-sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 21.4em 33.1em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../img/svg-sprite.png");
+}
+
+
+
+  .icon.greeting__header-entranceButton-iconEnter:before {
+      background-position: -0.2em -0.2em;
+      width: 1.3em;
+      height: 0.7em;
+  }
+
+
+
+
+  .icon.greeting__header-entranceIconLogin:before {
+      background-position: -0.2em -1.3em;
+      width: 1.3em;
+      height: 1.3em;
+  }
+
+
+
+
+  .icon.greeting__header-infoIconPhone:before {
+      background-position: -0.2em -3em;
+      width: 1.2em;
+      height: 1.2em;
+  }
+
+
+
+
+  .icon.greeting__header-logoLink-icon:before {
+      background-position: -0.2em -4.6000000000000005em;
+      width: 21em;
+      height: 5.7em;
+  }
+
+
+
+
+  .icon.greeting__services-itemIconInsurance:before {
+      background-position: -0.2em -10.7em;
+      width: 1.8em;
+      height: 2.1em;
+  }
+
+
+
+
+  .icon.greeting__services-itemIconReport:before {
+      background-position: -0.2em -13.2em;
+      width: 1.5em;
+      height: 1.9em;
+  }
+
+
+
+
+  .icon.greeting__services-itemIconResidence:before {
+      background-position: -0.2em -15.5em;
+      width: 2.2em;
+      height: 2.1em;
+  }
+
+
+
+
+  .icon.greeting__services-itemIconTicket:before {
+      background-position: -0.2em -18em;
+      width: 2.7em;
+      height: 2.5em;
+  }
+
+
+
+
+  .icon.greeting__services-itemIconTransfer:before {
+      background-position: -0.2em -20.9em;
+      width: 2.3em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.searchForm__buttonFind-iconEnter:before {
+      background-position: -0.2em -23.099999999999998em;
+      width: 0.7em;
+      height: 1.1em;
+  }
+
+
+
+
+  .icon.searchForm__inputCityDeparture-iconArrow:before {
+      background-position: -0.2em -24.599999999999998em;
+      width: 2.2em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.searchForm__inputCityDeparture-iconReset:before {
+      background-position: -0.2em -26.5em;
+      width: 1em;
+      height: 1em;
+  }
+
+
+
+
+  .icon.searchForm__inputDate-iconCalendar:before {
+      background-position: -0.2em -27.9em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.searchForm__inputQuantity-iconDown:before {
+      background-position: -0.2em -29.9em;
+      width: 1.4em;
+      height: 0.8em;
+  }
+
+
+
+
+  .icon.searchForm__inputQuantity-iconPerson:before {
+      background-position: -0.2em -31.099999999999998em;
+      width: 0.8em;
+      height: 1.8em;
+  }
+
+
+
+
+

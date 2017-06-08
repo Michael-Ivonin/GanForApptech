@@ -2,7 +2,7 @@
   background: url(../img/greeting-bg.jpg) no-repeat
   background-position: center
   background-size: cover
-  height: 100vh
+  //height: 100vh
 
 .greeting__header
   width: 100%
@@ -10,11 +10,14 @@
   box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19)
 
 .greeting__header-logoLink
-  //display: block
-  //background: url(../img/logo.svg)
-  //width: 210px
-  //height: 57px
-  //margin: 11px 155px 0 0
+  height: inherit
+  padding: 0
+  font-size: inherit
+  line-height: inherit
+  margin: 11px 155px 0 0
+
+.navbar-collapse
+  padding: 0
 
 .greeting__header-menu
   margin-top: 35px
@@ -28,14 +31,21 @@
 .greeting__header-menuItem-link
   font-size: 0.938rem
   color: $black4
+  letter-spacing: -0.35px
 
 .greeting__header-info
   display: inline-block
   float: left
   margin-top: 29px
-  margin-right: 23px
+  //margin-right: 23px
+
+.greeting__header-infoIconPhone
+  margin-right: 9px
+  position: relative
+  top: -3px
 
 .greeting__header-infoNumber
+  display: inline-block
   font-size: 1.125rem
   color: $grey9
   font-weight: 500
@@ -48,24 +58,45 @@
   text-transform: uppercase
   text-align: center
   letter-spacing: 1.67px
+  margin-left: 25px
 
 .greeting__header-entrance
   display: inline-block
+  float: right
   height: 81px
   border-left: 1px solid $darkWhite
-  border-right: 1px solid $darkWhite
-  padding: 28px 34px 0 25px
+  //border-right: 1px solid $darkWhite
+  padding: 28px 13px 0 25px
+
+.greeting__header-entranceIconLogin
+  border: 2px solid $black
+  border-radius: 100%
+  padding: 5px
+  position: relative
+  top: -2px
+  margin-right: 5px
+
+  &:before
+    position: relative
+    top: -2px
 
 %btn-default
   border: none
   outline: none
   background: none
+  padding: 0
+  //vertical-align: middle
 
 .greeting__header-entranceButton
   @extend %btn-default
   font-size: 1rem
   color: $grey9
   margin-top: 7px
+
+.greeting__header-entranceButton-iconEnter
+  margin-left: 4px
+  position: relative
+  top: -3px
 
 .greeting__presentation
   text-align: center

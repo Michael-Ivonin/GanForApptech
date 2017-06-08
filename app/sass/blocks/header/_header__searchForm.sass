@@ -16,7 +16,7 @@
   margin-bottom: 11px
 
 .searchForm__inputCityDeparture-inputText
-  width: 156px
+  width: 158px
   height: 13px
   font-size: 1rem
   color: $black
@@ -34,19 +34,30 @@
   &:-ms-input-placeholder
     color: $grey9
 
+.searchForm__inputCityDeparture-iconArrow
+  float: right
+
 .searchForm__inputCityArrive
   @extend .searchForm__inputCityDeparture
   border-radius: 0
+  padding-right: 20px
+  padding-left: 11px
 
 .searchForm__inputCityArrive-text
   @extend .searchForm__inputCityDeparture-text
 
 .searchForm__inputCityArrive-inputText
   @extend .searchForm__inputCityDeparture-inputText
+  width: 207px
+
+.searchForm__inputCityArrive-iconReset
+  @extend .searchForm__inputCityDeparture-iconReset
+  position: relative
+  top: -3px
 
 .searchForm__inputDate
   @extend .searchForm__inputCityArrive
-  padding: 10px 11px 14px 16px
+  padding-right: 11px
   border-left: 1px solid $superDarkWhite
   border-right: 1px solid $superDarkWhite
 
@@ -61,13 +72,27 @@
 
 .searchForm__inputDate-inputDay
   @extend .searchForm__inputCityDeparture-inputText
+  width: 92px
+
+.searchForm__inputDate-iconArrow
+  @extend .searchForm__inputCityDeparture-iconArrow
+  margin-right: 19px
+
+.searchForm__inputDate-iconCalendar
+  float: right
 
 .searchForm__inputQuantity
   @extend .searchForm__inputCityArrive
-  padding: 10px 10px 11px 16px
+  padding-right: 10px
+  padding-bottom: 9px
 
 .searchForm__inputQuantity-text
   @extend .searchForm__inputCityDeparture-text
+
+.searchForm__inputQuantity-iconPerson
+  position: relative
+  top: -2px
+  margin-right: 3px
 
 .searchForm__inputQuantity-inputNumber
   width: 151px
@@ -82,10 +107,14 @@
   border-radius: 0 5px 5px 0
   padding: 25px 27px 25px 38px
 
-  span
-    font-size: 0.813rem
-    color: $white
-    text-transform: uppercase
-    font-weight: 700
-    margin-right: 17px
-    letter-spacing: 1.32px
+.searchForm__buttonFind-text
+  font-size: 0.813rem
+  color: $white
+  text-transform: uppercase
+  font-weight: 700
+  margin-right: 17px
+  letter-spacing: 1.32px
+
+.icon.searchForm__buttonFind-iconEnter
+  float: right
+  margin-top: 3px

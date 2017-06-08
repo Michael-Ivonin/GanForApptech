@@ -5,7 +5,7 @@
 'use strict';
 
 const gulp = require('gulp'),
-      changed = require('gulp-changed'),
+      /*changed = require('gulp-changed'),*/
       pug = require('gulp-pug'),
       sass = require('gulp-sass'),
       browserSync = require('browser-sync').create(),
@@ -81,12 +81,15 @@ gulp.task('svg', function() {
   return gulp.src('./app/img/svg/*.svg')
     .pipe(svgSprite({
       svg: {
-        sprite: '../img/_svg-sprite.svg'
+        sprite: '../img/svg-sprite.svg'
       },
-      cssFile: '../sass/_svg-sprite.scss',
+      preview: {
+        sprite: 'svg-sprite.html'
+      },
+      cssFile: '../css/_svg-sprite.css',
       svgPath: '%f',
-      pngPath: '%f'
-      //padding: 2
+      pngPath: '%f',
+      padding: 2
     }))
     .pipe(gulp.dest('./app/img'));
 });

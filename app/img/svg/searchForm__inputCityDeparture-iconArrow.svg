@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="22px" height="15px" viewBox="0 0 22 15">
+<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+<feFlood flood-color="rgb(255,199,21)" result="coFloodOut1"/>
+<feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+<feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+</filter>
+<image x="0" y="0" width="22" height="15" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAPCAQAAABKZPfjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAACkSURBVCjPjdCxSkJxGMbh55yanAKvIFxCiKAhZ8EpCNxy8QIau6+GRr2Chmh0cI12a1Ac1LfFQQQ9/9/48fAO34XT1d6tzBVU+xBbtyW48ipi5a6EM9rzmzI+FvGnU8YHfsXCNZfetOQk3fmxwZVP/eoMPG5WmZxdjm+P2lgaNO/1LcRSt5kORaxL6JOIrfsmWHkRsfHQvFr7EtEre1XL1PPh4R+2PDHjSaeFVwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wNi0wOFQwNToxNzoxOSswMDowMJYgxzQAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDYtMDhUMDU6MTc6MTkrMDA6MDDnfX+IAAAAAElFTkSuQmCC" /></svg>

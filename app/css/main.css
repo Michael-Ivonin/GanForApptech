@@ -35,14 +35,23 @@ body {
   background: url(../img/greeting-bg.jpg) no-repeat;
   background-position: center;
   -webkit-background-size: cover;
-          background-size: cover;
-  height: 100vh; }
+          background-size: cover; }
 
 .greeting__header {
   width: 100%;
   background-color: white;
   -webkit-box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19);
           box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19); }
+
+.greeting__header-logoLink {
+  height: inherit;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 11px 155px 0 0; }
+
+.navbar-collapse {
+  padding: 0; }
 
 .greeting__header-menu {
   margin-top: 35px;
@@ -54,15 +63,21 @@ body {
 
 .greeting__header-menuItem-link {
   font-size: 0.938rem;
-  color: #1f1a17; }
+  color: #1f1a17;
+  letter-spacing: -0.35px; }
 
 .greeting__header-info {
   display: inline-block;
   float: left;
-  margin-top: 29px;
-  margin-right: 23px; }
+  margin-top: 29px; }
+
+.greeting__header-infoIconPhone {
+  margin-right: 9px;
+  position: relative;
+  top: -3px; }
 
 .greeting__header-infoNumber {
+  display: inline-block;
   font-size: 1.125rem;
   color: #2c2c2c;
   font-weight: 500;
@@ -74,24 +89,43 @@ body {
   color: #a1a1a1;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 1.67px; }
+  letter-spacing: 1.67px;
+  margin-left: 25px; }
 
 .greeting__header-entrance {
   display: inline-block;
+  float: right;
   height: 81px;
   border-left: 1px solid #ebebeb;
-  border-right: 1px solid #ebebeb;
-  padding: 28px 34px 0 25px; }
+  padding: 28px 13px 0 25px; }
+
+.greeting__header-entranceIconLogin {
+  border: 2px solid black;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  padding: 5px;
+  position: relative;
+  top: -2px;
+  margin-right: 5px; }
+  .greeting__header-entranceIconLogin:before {
+    position: relative;
+    top: -2px; }
 
 .greeting__header-entranceButton, .searchForm__buttonFind {
   border: none;
   outline: none;
-  background: none; }
+  background: none;
+  padding: 0; }
 
 .greeting__header-entranceButton {
   font-size: 1rem;
   color: #2c2c2c;
   margin-top: 7px; }
+
+.greeting__header-entranceButton-iconEnter {
+  margin-left: 4px;
+  position: relative;
+  top: -3px; }
 
 .greeting__presentation {
   text-align: center; }
@@ -143,7 +177,7 @@ body {
   margin-bottom: 11px; }
 
 .searchForm__inputCityDeparture-inputText, .searchForm__inputCityArrive-inputText, .searchForm__inputDate-inputDay {
-  width: 156px;
+  width: 158px;
   height: 13px;
   font-size: 1rem;
   color: black;
@@ -158,12 +192,24 @@ body {
   .searchForm__inputCityDeparture-inputText:-ms-input-placeholder, .searchForm__inputCityArrive-inputText:-ms-input-placeholder, .searchForm__inputDate-inputDay:-ms-input-placeholder {
     color: #2c2c2c; }
 
+.searchForm__inputCityDeparture-iconArrow, .searchForm__inputDate-iconArrow {
+  float: right; }
+
 .searchForm__inputCityArrive, .searchForm__inputDate, .searchForm__inputQuantity {
   -webkit-border-radius: 0;
-          border-radius: 0; }
+          border-radius: 0;
+  padding-right: 20px;
+  padding-left: 11px; }
+
+.searchForm__inputCityArrive-inputText {
+  width: 207px; }
+
+.searchForm__inputCityArrive-iconReset {
+  position: relative;
+  top: -3px; }
 
 .searchForm__inputDate {
-  padding: 10px 11px 14px 16px;
+  padding-right: 11px;
   border-left: 1px solid #e1e1e1;
   border-right: 1px solid #e1e1e1; }
   .searchForm__inputDate .wrap_there {
@@ -171,8 +217,23 @@ body {
   .searchForm__inputDate .wrap_back {
     float: left; }
 
+.searchForm__inputDate-inputDay {
+  width: 92px; }
+
+.searchForm__inputDate-iconArrow {
+  margin-right: 19px; }
+
+.searchForm__inputDate-iconCalendar {
+  float: right; }
+
 .searchForm__inputQuantity {
-  padding: 10px 10px 11px 16px; }
+  padding-right: 10px;
+  padding-bottom: 9px; }
+
+.searchForm__inputQuantity-iconPerson {
+  position: relative;
+  top: -2px;
+  margin-right: 3px; }
 
 .searchForm__inputQuantity-inputNumber {
   width: 151px;
@@ -186,13 +247,18 @@ body {
   -webkit-border-radius: 0 5px 5px 0;
           border-radius: 0 5px 5px 0;
   padding: 25px 27px 25px 38px; }
-  .searchForm__buttonFind span {
-    font-size: 0.813rem;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-right: 17px;
-    letter-spacing: 1.32px; }
+
+.searchForm__buttonFind-text {
+  font-size: 0.813rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 17px;
+  letter-spacing: 1.32px; }
+
+.icon.searchForm__buttonFind-iconEnter {
+  float: right;
+  margin-top: 3px; }
 
 .greeting__socials {
   float: right; }
@@ -208,10 +274,40 @@ body {
           justify-content: center;
   margin-top: 45px; }
 
+.greeting__services-item {
+  margin: 0 41px; }
+  .greeting__services-item .icon {
+    float: left; }
+
+.greeting__services-itemIconTicket {
+  margin-right: 7px;
+  position: relative;
+  top: -7px; }
+
+.greeting__services-itemIconResidence {
+  margin-right: 9px;
+  position: relative;
+  top: -4px; }
+
+.greeting__services-itemIconTransfer {
+  margin-right: 11px;
+  position: relative;
+  top: -2px; }
+
+.greeting__services-itemIconInsurance {
+  margin-right: 10px;
+  position: relative;
+  top: -2px; }
+
+.greeting__services-itemIconReport {
+  margin-right: 8px;
+  position: relative;
+  top: -2px; }
+
 .greeting__services-itemText {
   font-size: 0.938rem;
   color: white;
-  margin: 0 41px; }
+  display: inline-block; }
 
 .icon {
   font-size: 10px; }
@@ -220,18 +316,88 @@ body {
   content: ' ';
   vertical-align: middle;
   display: inline-block;
-  background-image: url("../img/_svg-sprite.svg");
+  background-image: url("../img/svg-sprite.svg");
   background-repeat: no-repeat;
-  -webkit-background-size: 21em 5.7em;
-          background-size: 21em 5.7em; }
+  -webkit-background-size: 21.4em 33.1em;
+          background-size: 21.4em 33.1em; }
 
 .no-svg .icon:before {
-  background-image: url("../img/_svg-sprite.png"); }
+  background-image: url("../img/svg-sprite.png"); }
 
-.icon.logo:before {
-  background-position: 0em 0em;
+.icon.greeting__header-entranceButton-iconEnter:before {
+  background-position: -0.2em -0.2em;
+  width: 1.3em;
+  height: 0.7em; }
+
+.icon.greeting__header-entranceIconLogin:before {
+  background-position: -0.2em -1.3em;
+  width: 1.3em;
+  height: 1.3em; }
+
+.icon.greeting__header-infoIconPhone:before {
+  background-position: -0.2em -3em;
+  width: 1.2em;
+  height: 1.2em; }
+
+.icon.greeting__header-logoLink-icon:before {
+  background-position: -0.2em -4.6000000000000005em;
   width: 21em;
   height: 5.7em; }
+
+.icon.greeting__services-itemIconInsurance:before {
+  background-position: -0.2em -10.7em;
+  width: 1.8em;
+  height: 2.1em; }
+
+.icon.greeting__services-itemIconReport:before {
+  background-position: -0.2em -13.2em;
+  width: 1.5em;
+  height: 1.9em; }
+
+.icon.greeting__services-itemIconResidence:before {
+  background-position: -0.2em -15.5em;
+  width: 2.2em;
+  height: 2.1em; }
+
+.icon.greeting__services-itemIconTicket:before {
+  background-position: -0.2em -18em;
+  width: 2.7em;
+  height: 2.5em; }
+
+.icon.greeting__services-itemIconTransfer:before {
+  background-position: -0.2em -20.9em;
+  width: 2.3em;
+  height: 1.8em; }
+
+.icon.searchForm__buttonFind-iconEnter:before {
+  background-position: -0.2em -23.099999999999998em;
+  width: 0.7em;
+  height: 1.1em; }
+
+.icon.searchForm__inputCityDeparture-iconArrow:before, .icon.searchForm__inputDate-iconArrow:before {
+  background-position: -0.2em -24.599999999999998em;
+  width: 2.2em;
+  height: 1.5em; }
+
+.icon.searchForm__inputCityDeparture-iconReset:before, .icon.searchForm__inputCityArrive-iconReset:before {
+  background-position: -0.2em -26.5em;
+  width: 1em;
+  height: 1em; }
+
+.icon.searchForm__inputDate-iconCalendar:before {
+  background-position: -0.2em -27.9em;
+  width: 1.6em;
+  height: 1.6em; }
+
+.icon.searchForm__inputQuantity-iconDown:before {
+  background-position: -0.2em -29.9em;
+  width: 1.4em;
+  height: 0.8em; }
+
+.icon.searchForm__inputQuantity-iconPerson:before {
+  background-position: -0.2em -31.099999999999998em;
+  width: 0.8em;
+  height: 1.8em; }
 
 @media (min-width: 1280px) {
   .container {
