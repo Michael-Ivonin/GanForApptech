@@ -95,9 +95,8 @@ body {
 .greeting__header-entrance {
   display: inline-block;
   float: right;
-  height: 81px;
   border-left: 1px solid #ebebeb;
-  padding: 28px 13px 0 25px; }
+  padding: 28px 13px 28px 25px; }
 
 .greeting__header-entranceIconLogin {
   border: 2px solid black;
@@ -159,11 +158,11 @@ body {
 
 .searchForm {
   display: inline-block;
-  text-align: initial;
   -webkit-box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15); }
 
 .searchForm__inputCityDeparture, .searchForm__inputCityArrive, .searchForm__inputDate, .searchForm__inputQuantity {
+  text-align: initial;
   float: left;
   background: white;
   -webkit-border-radius: 5px 0 0 5px;
@@ -282,7 +281,8 @@ body {
 .greeting__services-itemIconTicket {
   margin-right: 7px;
   position: relative;
-  top: -7px; }
+  top: -7px;
+  margin-bottom: -4px; }
 
 .greeting__services-itemIconResidence {
   margin-right: 9px;
@@ -403,3 +403,125 @@ body {
   .container {
     width: 1240px;
     padding: 0; } }
+
+@media (min-width: 1200px) and (max-width: 1279px) {
+  .greeting__header-logoLink {
+    margin-right: 106px; }
+  .greeting__header-menu {
+    margin-right: 40px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .greeting__header-logoLink {
+    margin-right: 69px; }
+  .greeting__header-menu {
+    margin-right: 0; }
+  .searchForm {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .searchForm__inputCityDeparture, .searchForm__inputCityArrive, .searchForm__inputDate, .searchForm__inputQuantity {
+    -webkit-box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15); }
+  .searchForm__inputQuantity {
+    -webkit-border-radius: 0 5px 5px 0;
+            border-radius: 0 5px 5px 0; }
+  .searchForm__buttonFind {
+    margin-top: 32px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1); }
+  .greeting__services-item {
+    margin: 0 23px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .greeting__header-logoLink {
+    margin-top: 12px;
+    margin-right: 17px; }
+  .greeting__header-logoLink-icon {
+    font-size: 0.45rem; }
+  .greeting__header-menu {
+    margin-top: 28px;
+    margin-right: 0; }
+  .navbar-nav > li > a, .nav > li > a {
+    padding: 0 14px; }
+  .greeting__header-menuItem-link {
+    font-size: 0.813rem; }
+  .greeting__header-entrance {
+    padding-top: 21px;
+    padding-bottom: 25px; }
+  .greeting__presentationText {
+    margin-top: 75px;
+    font-size: 0.815rem;
+    letter-spacing: 3.1px; }
+  .greeting__presentationHeading {
+    font-size: 3.125rem;
+    letter-spacing: 11.8px;
+    margin-bottom: 40px; }
+  .greeting__formHeading {
+    font-size: 1.125rem;
+    margin-bottom: 27px; }
+  .searchForm {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 100%; }
+  .searchForm__inputCityDeparture, .searchForm__inputCityArrive, .searchForm__inputDate, .searchForm__inputQuantity {
+    -webkit-box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 5px 0 0 0;
+            border-radius: 5px 0 0 0;
+    margin-bottom: 2px;
+    width: 50%;
+    padding-right: 1px; }
+  .searchForm__inputCityArrive, .searchForm__inputDate, .searchForm__inputQuantity {
+    -webkit-border-radius: 0 5px 0 0;
+            border-radius: 0 5px 0 0;
+    width: 50%;
+    padding-left: 25px;
+    padding-right: 12px; }
+  .searchForm__inputCityArrive-iconReset {
+    float: right;
+    top: inherit;
+    bottom: -3px; }
+  .searchForm__inputDate {
+    -webkit-border-radius: 0 0 0 5px;
+            border-radius: 0 0 0 5px;
+    width: 50%;
+    padding: 10px 16px 14px; }
+    .searchForm__inputDate .wrap_there, .searchForm__inputDate .wrap_back {
+      width: 50%; }
+    .searchForm__inputDate .searchForm__inputDate-iconArrow {
+      margin-right: 0; }
+    .searchForm__inputDate .wrap_back {
+      padding-left: 55px; }
+  .searchForm__inputQuantity {
+    -webkit-border-radius: 0 0 5px 0;
+            border-radius: 0 0 5px 0;
+    margin-left: 2px;
+    width: -webkit-calc(50% - 2px);
+    width: calc(50% - 2px);
+    padding-right: 0; }
+  .searchForm__inputQuantity-inputNumber {
+    width: -webkit-calc(100% - 22px);
+    width: calc(100% - 22px); }
+  .searchForm__buttonFind {
+    margin-top: 30px;
+    width: 275px;
+    height: 50px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15);
+    padding: 0;
+    vertical-align: middle; }
+  .searchForm__buttonFind-text {
+    margin-right: 0; }
+  .searchForm__buttonFind-text.visible-sm {
+    display: inline !important; }
+  .searchForm__buttonFind-iconEnter {
+    float: inherit !important;
+    margin-top: 0 !important;
+    margin-left: 27px;
+    position: relative;
+    top: -2px; }
+  .greeting__services-item {
+    margin: 0 10px; } }
