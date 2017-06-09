@@ -26,7 +26,7 @@
           <div class="collapse navbar-collapse" id="menu">
             <ul class="nav navbar-nav greeting__header-menu">
               <li class="greeting__header-menuItem">
-                <a class="greeting__header-menuItem-link" href="#">О компании</a>
+                <a class="greeting__header-menuItem-link" href="#">О&nbsp;компании</a>
               </li>
               <li class="greeting__header-menuItem">
                 <a class="greeting__header-menuItem-link" href="#">Возможности</a>
@@ -42,7 +42,7 @@
               <p class="greeting__header-infoText">24/7. Бесплатно по РФ</p>
             </div>
             <!-- /.greeting__header-info-->
-            <form class="greeting__header-entrance">
+            <form class="greeting__header-entrance hidden-xs">
               <span class="icon greeting__header-entranceIconLogin"></span>
               <button class="greeting__header-entranceButton" type="button">
                 <span>Войти</span>
@@ -63,7 +63,9 @@
         </div>
         <!-- /.greeting__presentation-->
         <div class="greeting__form">
-          <h5 class="greeting__formHeading">Поиск лучшего варианта вашей деловой поездки:</h5>
+          <h5 class="greeting__formHeading">Поиск лучшего варианта
+            <span class="hidden-xs">вашей деловой</span>поездки:
+          </h5>
           <form class="searchForm">
             <div class="searchForm__inputCityDeparture">
               <label class="searchForm__inputCityDeparture-text" for="inputCity1">Город отправления</label><br>
@@ -71,13 +73,13 @@
               <span class="icon searchForm__inputCityDeparture-iconArrow hidden-xs"></span>
               <span class="icon searchForm__inputCityDeparture-iconReset visible-xs"></span>
             </div>
-            <!-- /.searchForm__inputCityDeparture-->
+            <!-- /.searchForm__inputCityDeparture--><br class="visible-xs">
             <div class="searchForm__inputCityArrive">
               <label class="searchForm__inputCityArrive-text" for="inputCity2">Город назначения</label><br>
               <input class="searchForm__inputCityArrive-inputText" type="text" placeholder="Москва" id="inputCity2" required>
               <span class="icon searchForm__inputCityArrive-iconReset"></span>
             </div>
-            <!-- /.searchForm__inputCityArrive--><br class="visible-sm">
+            <!-- /.searchForm__inputCityArrive--><br class="visible-sm visible-xs">
             <div class="searchForm__inputDate">
               <div class="wrap_there">
                 <label class="searchForm__inputDate-text">Туда</label><br>
@@ -90,7 +92,7 @@
                 <span class="icon searchForm__inputDate-iconCalendar"></span>
               </div>
             </div>
-            <!-- /.searchForm__inputDate-->
+            <!-- /.searchForm__inputDate--><br class="visible-xs">
             <div class="searchForm__inputQuantity">
               <label class="searchForm__inputQuantity-text">Сотрудников</label><br>
               <span class="icon searchForm__inputQuantity-iconPerson"></span>
@@ -103,21 +105,29 @@
               </select>
               <!-- /.searchForm__inputQuantity-inputNumber-->
             </div>
-            <!-- /.searchForm__inputQuantity--><br class="visible-md visible-sm">
+            <!-- /.searchForm__inputQuantity--><br class="visible-md visible-sm visible-xs">
             <button class="searchForm__buttonFind" type="submit">
               <span class="searchForm__buttonFind-text">Подобрать</span>
-              <span class="searchForm__buttonFind-text visible-sm">Варианты</span>
+              <span class="searchForm__buttonFind-text visible-sm visible-xs">Варианты</span>
               <span class="icon searchForm__buttonFind-iconEnter"></span>
             </button>
           </form>
           <!-- /.searchForm-->
         </div>
         <!-- /.greeting__form-->
-        <div class="greeting__socials">
-          <span class="greeting__socials-iconTwitter"></span>
-          <span class="greeting__socials-iconInstagram"></span>
-          <span class="greeting__socials-iconFacebook"></span>
-          <span class="greeting__socials-iconGooglePlus"></span>
+        <div class="greeting__socials visible-lg visible-md">
+          <div class="wrapper">
+            <span class="icon greeting__socials-iconTwitter"></span>
+          </div>
+          <div class="wrapper">
+            <span class="icon greeting__socials-iconInstagram"></span>
+          </div>
+          <div class="wrapper">
+            <span class="icon greeting__socials-iconFacebook"></span>
+          </div>
+          <div class="wrapper">
+            <span class="icon greeting__socials-iconGooglePlus"></span>
+          </div>
         </div>
         <!-- /.greeting__socials-->
         <div class="greeting__services">

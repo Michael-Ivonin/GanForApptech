@@ -12,7 +12,7 @@
       .collapse.navbar-collapse#menu
         ul.nav.navbar-nav.greeting__header-menu
           li.greeting__header-menuItem
-            a.greeting__header-menuItem-link(href='#') О компании
+            a.greeting__header-menuItem-link(href='#') О&nbsp;компании
           li.greeting__header-menuItem
             a.greeting__header-menuItem-link(href='#') Возможности
           li.greeting__header-menuItem
@@ -23,7 +23,7 @@
           p.greeting__header-infoNumber 8&nbsp;800&nbsp;900&nbsp;77&nbsp;77
           p.greeting__header-infoText 24/7. Бесплатно по РФ
         // /.greeting__header-info
-        form.greeting__header-entrance
+        form.greeting__header-entrance.hidden-xs
           span.icon.greeting__header-entranceIconLogin
           button.greeting__header-entranceButton(type='button')
             span Войти
@@ -38,14 +38,21 @@
       h1.greeting__presentationHeading Командировка
     // /.greeting__presentation
     .greeting__form
-      h5.greeting__formHeading Поиск лучшего варианта вашей деловой поездки:
+      h5.greeting__formHeading
+        | Поиск лучшего варианта
+        span.hidden-xs вашей деловой
+        | поездки:
       include _header__searchForm
     // /.greeting__form
-    .greeting__socials
-      span.greeting__socials-iconTwitter
-      span.greeting__socials-iconInstagram
-      span.greeting__socials-iconFacebook
-      span.greeting__socials-iconGooglePlus
+    .greeting__socials.visible-lg.visible-md
+      .wrapper
+        span.icon.greeting__socials-iconTwitter
+      .wrapper
+        span.icon.greeting__socials-iconInstagram
+      .wrapper
+        span.icon.greeting__socials-iconFacebook
+      .wrapper
+        span.icon.greeting__socials-iconGooglePlus
     // /.greeting__socials
     include _header__services
   // /.container

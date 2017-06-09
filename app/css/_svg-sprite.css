@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../img/svg-sprite.svg");
     background-repeat: no-repeat;
-    background-size: 21.4em 33.1em;
+    background-size: 21.4em 39.6em;
 }
 
 .no-svg .icon:before {
@@ -98,8 +98,44 @@
 
 
 
-  .icon.searchForm__buttonFind-iconEnter:before {
+  .icon.greeting__socials-iconFacebook:before {
       background-position: -0.2em -23.099999999999998em;
+      width: 0.8em;
+      height: 1.4em;
+  }
+
+
+
+
+  .icon.greeting__socials-iconGooglePlus:before {
+      background-position: -0.2em -24.9em;
+      width: 1.7em;
+      height: 1em;
+  }
+
+
+
+
+  .icon.greeting__socials-iconInstagram:before {
+      background-position: -0.2em -26.3em;
+      width: 1.4em;
+      height: 1.4em;
+  }
+
+
+
+
+  .icon.greeting__socials-iconTwitter:before {
+      background-position: -0.2em -28.099999999999998em;
+      width: 1.4em;
+      height: 1.1em;
+  }
+
+
+
+
+  .icon.searchForm__buttonFind-iconEnter:before {
+      background-position: -0.2em -29.599999999999998em;
       width: 0.7em;
       height: 1.1em;
   }
@@ -108,7 +144,7 @@
 
 
   .icon.searchForm__inputCityDeparture-iconArrow:before {
-      background-position: -0.2em -24.599999999999998em;
+      background-position: -0.2em -31.099999999999998em;
       width: 2.2em;
       height: 1.5em;
   }
@@ -117,7 +153,7 @@
 
 
   .icon.searchForm__inputCityDeparture-iconReset:before {
-      background-position: -0.2em -26.5em;
+      background-position: -0.2em -33em;
       width: 1em;
       height: 1em;
   }
@@ -126,7 +162,7 @@
 
 
   .icon.searchForm__inputDate-iconCalendar:before {
-      background-position: -0.2em -27.9em;
+      background-position: -0.2em -34.400000000000006em;
       width: 1.6em;
       height: 1.6em;
   }
@@ -135,7 +171,7 @@
 
 
   .icon.searchForm__inputQuantity-iconDown:before {
-      background-position: -0.2em -29.9em;
+      background-position: -0.2em -36.400000000000006em;
       width: 1.4em;
       height: 0.8em;
   }
@@ -144,7 +180,7 @@
 
 
   .icon.searchForm__inputQuantity-iconPerson:before {
-      background-position: -0.2em -31.099999999999998em;
+      background-position: -0.2em -37.6em;
       width: 0.8em;
       height: 1.8em;
   }

@@ -2,7 +2,6 @@
   background: url(../img/greeting-bg.jpg) no-repeat
   background-position: center
   background-size: cover
-  //height: 100vh
 
 .greeting__header
   width: 100%
@@ -26,6 +25,9 @@
 .navbar-nav>li>a, .nav>li>a
   padding: 0 16px
   line-height: inherit
+
+  &:hover
+    background: none
 
 
 .greeting__header-menuItem-link
@@ -131,7 +133,20 @@
 @import "header__searchForm"
 
 .greeting__socials
-  float: right
+  position: absolute
+  right: 0
+  margin-right: 20px
+  top: 305px
+
+  .wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 32px
+    height: 32px
+    border: 1px solid $white
+    border-radius: 100%
+    margin-bottom: 12px
 
 // Include _header__services.sass
 @import "header__services"

@@ -6,13 +6,14 @@ form.searchForm
     span.icon.searchForm__inputCityDeparture-iconArrow.hidden-xs
     span.icon.searchForm__inputCityDeparture-iconReset.visible-xs
   // /.searchForm__inputCityDeparture
+  br.visible-xs
   .searchForm__inputCityArrive
     label.searchForm__inputCityArrive-text(for='inputCity2') Город назначения
     br
     input.searchForm__inputCityArrive-inputText(type='text', placeholder='Москва', id='inputCity2', required)
     span.icon.searchForm__inputCityArrive-iconReset
   // /.searchForm__inputCityArrive
-  br.visible-sm
+  br.visible-sm.visible-xs
   .searchForm__inputDate
     .wrap_there
       label.searchForm__inputDate-text Туда
@@ -25,6 +26,7 @@ form.searchForm
       input.searchForm__inputDate-inputDay(type='text', placeholder='14/03/17', required)
       span.icon.searchForm__inputDate-iconCalendar
   // /.searchForm__inputDate
+  br.visible-xs
   .searchForm__inputQuantity
     label.searchForm__inputQuantity-text Сотрудников
     br
@@ -37,9 +39,9 @@ form.searchForm
       option.searchForm__inputQuantity-inputNumber-item 5
     // /.searchForm__inputQuantity-inputNumber
   // /.searchForm__inputQuantity
-  br.visible-md.visible-sm
+  br.visible-md.visible-sm.visible-xs
   button.searchForm__buttonFind(type='submit')
     span.searchForm__buttonFind-text Подобрать
-    span.searchForm__buttonFind-text.visible-sm Варианты
+    span.searchForm__buttonFind-text.visible-sm.visible-xs Варианты
     span.icon.searchForm__buttonFind-iconEnter
 // /.searchForm
