@@ -49,6 +49,9 @@
   .steps__item-text
     font-size: 0.95rem
 
+  .steps__item-link
+    font-size: 0.75rem
+
 
 
 @media (min-width: 768px) and (max-width: 991px)
@@ -201,7 +204,7 @@
 
   .steps
     padding-top: 86px
-    //padding-bottom: 89px
+    padding-bottom: 89px
 
   .steps__heading
     font-size: 2.058rem
@@ -209,19 +212,23 @@
 
   .steps__itemsLine
     width: 0
-    height: 300px
+    height: 255px
     float: left
     margin: 0
+    border-bottom: none
     border-right: 2px dashed $mediumOrange
     position: static
     left: 0
     padding-top: 0
+    padding-left: 17px
+    margin-left: 73px
 
   .steps__itemsWrap
     display: block
     align-items: inherit
     justify-content: inherit
-    position: static
+    left: -19px
+    margin-right: -19px
     top: 0
     margin-bottom: 0
     text-align: initial
@@ -235,21 +242,25 @@
       margin-left: 0
     &:nth-child(4)
       height: 67px
+      margin-bottom: 0
 
   .steps__item-number
     float: left
     margin-bottom: 0
-    margin-right: 24px
+    margin-right: 40px
 
   .steps__item-text
     margin-bottom: 0
     padding-top: 8px
+    float: left
 
-    &:nth-child(4)
-      margin-bottom: 20px
+    &:nth-child(2)
+      float: none
 
   .steps__item-link
-    margin-left: 61px
+    float: left
+    margin-top: 20px
+
 
 
 @media (max-width: 767px)
@@ -403,3 +414,69 @@
     margin-top: 15px
     letter-spacing: 0.08px
     line-height: 13px
+
+  .steps
+    padding-top: 59px
+    padding-bottom: 83px
+
+  .steps__heading
+    font-size: 1.125rem
+    font-weight: 500
+    margin-bottom: 38px
+
+  .wrapper
+    display: inline-block
+
+  .steps__itemsLine
+    width: 0
+    height: 250px
+    float: left
+    margin: 35px 0 0 0
+    border-bottom: none
+    border-right: 2px dashed $mediumOrange
+    position: static
+    left: 0
+    padding-top: 0
+    padding-left: 17px
+
+  .steps__itemsWrap
+    display: block
+    align-items: inherit
+    justify-content: inherit
+    left: -19px
+    margin-right: -19px
+    top: 0
+    margin-bottom: 0
+    text-align: initial
+    width: 281px
+
+  .steps__item
+    width: initial
+    height: 50px
+    margin-bottom: 44px
+
+    &:nth-child(1)
+      margin-left: 0
+    &:nth-child(4)
+      height: 110px
+      margin-bottom: 0
+
+  .steps__item-number
+    float: left
+    margin-bottom: 0
+    margin-right: 24px
+
+  .steps__item-text
+    margin-bottom: 0
+    padding-top: 8px
+    float: left
+    font-size: 0.905rem
+
+    &:nth-child(2)
+      float: none
+      overflow: hidden
+
+  .steps__item-link
+    float: left
+    margin-top: 20px
+    font-size: 0.72rem
