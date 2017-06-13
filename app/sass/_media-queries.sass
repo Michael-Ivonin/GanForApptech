@@ -12,7 +12,8 @@
   .greeting__header-menu
     margin-right: 40px
 
-
+  .steps__itemsLine
+    width: 880px
 
 @media (min-width: 992px) and (max-width: 1199px)
   .greeting__header-logoLink
@@ -41,6 +42,12 @@
 
   .benefits__item-text
     font-size: 0.85rem
+
+  .steps__itemsLine
+    width: 700px
+
+  .steps__item-text
+    font-size: 0.95rem
 
 
 
@@ -191,6 +198,58 @@
 
   .benefits__item-text
     margin-top: 22px
+
+  .steps
+    padding-top: 86px
+    //padding-bottom: 89px
+
+  .steps__heading
+    font-size: 2.058rem
+    margin-bottom: 54px
+
+  .steps__itemsLine
+    width: 0
+    height: 300px
+    float: left
+    margin: 0
+    border-right: 2px dashed $mediumOrange
+    position: static
+    left: 0
+    padding-top: 0
+
+  .steps__itemsWrap
+    display: block
+    align-items: inherit
+    justify-content: inherit
+    position: static
+    top: 0
+    margin-bottom: 0
+    text-align: initial
+
+  .steps__item
+    width: inherit
+    height: 37px
+    margin-bottom: 47px
+
+    &:nth-child(1)
+      margin-left: 0
+    &:nth-child(4)
+      height: 67px
+
+  .steps__item-number
+    float: left
+    margin-bottom: 0
+    margin-right: 24px
+
+  .steps__item-text
+    margin-bottom: 0
+    padding-top: 8px
+
+    &:nth-child(4)
+      margin-bottom: 20px
+
+  .steps__item-link
+    margin-left: 61px
 
 
 @media (max-width: 767px)
