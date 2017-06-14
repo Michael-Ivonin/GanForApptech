@@ -451,6 +451,7 @@ body {
 .eventually {
   background: white;
   padding-top: 116px;
+  padding-bottom: 97px;
   text-align: center; }
 
 .eventually__heading {
@@ -458,11 +459,19 @@ body {
   color: #323232;
   margin-bottom: 79px; }
 
+.eventually .row {
+  margin: 0 -11px; }
+
+.eventually .col-lg-7 {
+  padding-left: 0; }
+
+.eventually .col-lg-5 {
+  padding-right: 0; }
+
 .eventually__banner {
   width: 687px;
   height: 554px;
-  background: #f9f9f9;
-  margin-right: 55px; }
+  background: #f9f9f9; }
 
 .eventually__listHeading {
   float: left;
@@ -490,11 +499,48 @@ body {
   float: left;
   text-align: initial; }
 
+.eventually__list-mark {
+  float: left;
+  margin-top: 3px; }
+
 .eventually__list-item {
   font-size: 1.125rem;
   color: #2c2c2c;
   line-height: 25px;
-  margin-bottom: 36px; }
+  margin-bottom: 36px;
+  margin-left: 33px; }
+
+.formalization {
+  padding-top: 91px;
+  padding-bottom: 90px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1e669c), to(#2976b0));
+  background: -webkit-linear-gradient(bottom, #1e669c 0%, #2976b0 100%);
+  background: -o-linear-gradient(bottom, #1e669c 0%, #2976b0 100%);
+  background: linear-gradient(0deg, #1e669c 0%, #2976b0 100%);
+  text-align: center; }
+
+.formalization__heading {
+  font-size: 2.25rem;
+  color: white;
+  letter-spacing: 2.57px;
+  margin-bottom: 23px; }
+
+.formalization__text {
+  font-size: 1.063rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 49px;
+  letter-spacing: -0.4px; }
+
+.formalization .greeting__services {
+  margin-top: 52px;
+  margin-bottom: 0;
+  text-align: initial; }
+
+.anyDevice {
+  background: url(../img/anyDevice-bg.jpg);
+  padding-top: 222px;
+  padding-bottom: 279px; }
 
 .icon {
   font-size: 10px; }
@@ -652,7 +698,9 @@ body {
   .greeting__header-menu {
     margin-right: 40px; }
   .steps__itemsLine {
-    width: 880px; } }
+    width: 880px; }
+  .eventually__banner {
+    width: 662px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .greeting__header-logoLink {
@@ -683,7 +731,14 @@ body {
   .steps__item-text {
     font-size: 0.95rem; }
   .steps__item-link {
-    font-size: 0.75rem; } }
+    font-size: 0.75rem; }
+  .eventually .col-md-12 {
+    padding: 0 15px; }
+  .eventually__banner {
+    width: 100%;
+    margin-bottom: 73px; }
+  .eventually__listHeading, .eventually__list {
+    margin-left: 112px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .greeting__header-logoLink {
@@ -861,7 +916,34 @@ body {
       float: none; }
   .steps__item-link {
     float: left;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .eventually {
+    padding-top: 99px;
+    padding-bottom: 77px; }
+  .eventually__heading {
+    font-size: 2.058rem;
+    margin-bottom: 59px; }
+  .eventually .col-sm-12 {
+    padding: 0 15px; }
+  .eventually__banner {
+    width: 100%;
+    margin-bottom: 73px; }
+  .eventually__listHeading {
+    margin-bottom: 44px;
+    margin-left: 55px; }
+  .eventually__list {
+    margin-left: 55px; }
+  .eventually__list-item {
+    line-height: 24px;
+    margin-bottom: 34px; }
+  .formalization {
+    padding-top: 79px;
+    padding-bottom: 62px; }
+  .formalization__heading {
+    font-size: 2.058rem;
+    margin-bottom: 24px; }
+  .formalization__text {
+    margin-bottom: 55px; } }
 
 @media (max-width: 767px) {
   body {
@@ -1046,4 +1128,35 @@ body {
   .steps__item-link {
     float: left;
     margin-top: 20px;
-    font-size: 0.72rem; } }
+    font-size: 0.72rem; }
+  .eventually {
+    padding-top: 45px;
+    padding-bottom: 29px; }
+  .eventually__heading {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 42px; }
+  .eventually .col-xs-12 {
+    padding: 0 15px; }
+  .eventually__banner {
+    width: 100%;
+    height: 414px;
+    margin-bottom: 56px; }
+  .eventually__listHeading {
+    margin-bottom: 42px; }
+  .eventually__list-item {
+    font-size: 0.938rem;
+    line-height: 19px;
+    margin-bottom: 34px; }
+  .formalization {
+    padding-top: 37px;
+    padding-bottom: 45px; }
+  .formalization__heading {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 19px;
+    line-height: 24px; }
+  .formalization__text {
+    font-size: 0.813rem;
+    margin-bottom: 32px;
+    line-height: 18px; } }
