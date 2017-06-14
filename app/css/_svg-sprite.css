@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../img/svg-sprite.svg");
     background-repeat: no-repeat;
-    background-size: 21.4em 123.9em;
+    background-size: 21.4em 153.9em;
 }
 
 .no-svg .icon:before {
@@ -19,60 +19,96 @@
 
   .icon.benefits__item-iconBooking:before {
       background-position: -0.2em -0.2em;
-      width: 12.6em;
-      height: 13.1em;
+      width: 9.6em;
+      height: 10.5em;
   }
 
 
 
 
   .icon.benefits__item-iconBudget:before {
-      background-position: -0.2em -13.7em;
-      width: 12.9em;
-      height: 13.4em;
+      background-position: -0.2em -11.1em;
+      width: 9.9em;
+      height: 10.7em;
   }
 
 
 
 
   .icon.benefits__item-iconInsurance:before {
-      background-position: -0.2em -27.5em;
-      width: 13.1em;
-      height: 13.6em;
+      background-position: -0.2em -22.2em;
+      width: 10.2em;
+      height: 11em;
   }
 
 
 
 
   .icon.benefits__item-iconOnline:before {
-      background-position: -0.2em -41.5em;
-      width: 12.6em;
-      height: 13.1em;
+      background-position: -0.2em -33.6em;
+      width: 9.6em;
+      height: 10.5em;
   }
 
 
 
 
   .icon.benefits__item-iconProgram:before {
-      background-position: -0.2em -55em;
-      width: 12.6em;
-      height: 12.9em;
+      background-position: -0.2em -44.5em;
+      width: 9.6em;
+      height: 10.3em;
   }
 
 
 
 
   .icon.benefits__item-iconSupport:before {
-      background-position: -0.2em -68.3em;
-      width: 12.9em;
-      height: 13.4em;
+      background-position: -0.2em -55.2em;
+      width: 9.9em;
+      height: 10.7em;
+  }
+
+
+
+
+  .icon.cooperation__item-iconDescription:before {
+      background-position: -0.2em -66.3em;
+      width: 10.1em;
+      height: 11.1em;
+  }
+
+
+
+
+  .icon.cooperation__item-iconProfit:before {
+      background-position: -0.2em -77.8em;
+      width: 10.1em;
+      height: 11.1em;
+  }
+
+
+
+
+  .icon.cooperation__item-iconRegistration:before {
+      background-position: -0.2em -89.3em;
+      width: 9.8em;
+      height: 10.9em;
+  }
+
+
+
+
+  .icon.cooperation__item-iconStar:before {
+      background-position: -0.2em -100.60000000000001em;
+      width: 10.1em;
+      height: 11.1em;
   }
 
 
 
 
   .icon.eventually__list-mark:before {
-      background-position: -0.2em -82.10000000000001em;
+      background-position: -0.2em -112.10000000000001em;
       width: 2em;
       height: 2em;
   }
@@ -81,7 +117,7 @@
 
 
   .icon.greeting__header-entranceButton-iconEnter:before {
-      background-position: -0.2em -84.5em;
+      background-position: -0.2em -114.5em;
       width: 1.3em;
       height: 0.7em;
   }
@@ -90,7 +126,7 @@
 
 
   .icon.greeting__header-entranceIconLogin:before {
-      background-position: -0.2em -85.60000000000001em;
+      background-position: -0.2em -115.60000000000001em;
       width: 1.3em;
       height: 1.3em;
   }
@@ -99,7 +135,7 @@
 
 
   .icon.greeting__header-infoIconPhone:before {
-      background-position: -0.2em -87.3em;
+      background-position: -0.2em -117.3em;
       width: 1.2em;
       height: 1.2em;
   }
@@ -108,7 +144,7 @@
 
 
   .icon.greeting__header-logoLink-icon:before {
-      background-position: -0.2em -88.9em;
+      background-position: -0.2em -118.9em;
       width: 21em;
       height: 5.7em;
   }
@@ -117,7 +153,7 @@
 
 
   .icon.greeting__services-itemIconInsurance:before {
-      background-position: -0.2em -95em;
+      background-position: -0.2em -125em;
       width: 1.8em;
       height: 2.1em;
   }
@@ -126,7 +162,7 @@
 
 
   .icon.greeting__services-itemIconReport:before {
-      background-position: -0.2em -97.5em;
+      background-position: -0.2em -127.5em;
       width: 1.5em;
       height: 1.9em;
   }
@@ -135,7 +171,7 @@
 
 
   .icon.greeting__services-itemIconResidence:before {
-      background-position: -0.2em -99.8em;
+      background-position: -0.2em -129.79999999999998em;
       width: 2.2em;
       height: 2.1em;
   }
@@ -144,7 +180,7 @@
 
 
   .icon.greeting__services-itemIconTicket:before {
-      background-position: -0.2em -102.3em;
+      background-position: -0.2em -132.29999999999998em;
       width: 2.7em;
       height: 2.5em;
   }
@@ -153,7 +189,7 @@
 
 
   .icon.greeting__services-itemIconTransfer:before {
-      background-position: -0.2em -105.2em;
+      background-position: -0.2em -135.2em;
       width: 2.3em;
       height: 1.8em;
   }
@@ -162,7 +198,7 @@
 
 
   .icon.greeting__socials-iconFacebook:before {
-      background-position: -0.2em -107.4em;
+      background-position: -0.2em -137.39999999999998em;
       width: 0.8em;
       height: 1.4em;
   }
@@ -171,7 +207,7 @@
 
 
   .icon.greeting__socials-iconGooglePlus:before {
-      background-position: -0.2em -109.2em;
+      background-position: -0.2em -139.2em;
       width: 1.7em;
       height: 1em;
   }
@@ -180,7 +216,7 @@
 
 
   .icon.greeting__socials-iconInstagram:before {
-      background-position: -0.2em -110.60000000000001em;
+      background-position: -0.2em -140.6em;
       width: 1.4em;
       height: 1.4em;
   }
@@ -189,7 +225,7 @@
 
 
   .icon.greeting__socials-iconTwitter:before {
-      background-position: -0.2em -112.4em;
+      background-position: -0.2em -142.39999999999998em;
       width: 1.4em;
       height: 1.1em;
   }
@@ -198,7 +234,7 @@
 
 
   .icon.searchForm__buttonFind-iconEnter:before {
-      background-position: -0.2em -113.9em;
+      background-position: -0.2em -143.89999999999998em;
       width: 0.7em;
       height: 1.1em;
   }
@@ -207,7 +243,7 @@
 
 
   .icon.searchForm__inputCityDeparture-iconArrow:before {
-      background-position: -0.2em -115.4em;
+      background-position: -0.2em -145.39999999999998em;
       width: 2.2em;
       height: 1.5em;
   }
@@ -216,7 +252,7 @@
 
 
   .icon.searchForm__inputCityDeparture-iconReset:before {
-      background-position: -0.2em -117.3em;
+      background-position: -0.2em -147.29999999999998em;
       width: 1em;
       height: 1em;
   }
@@ -225,7 +261,7 @@
 
 
   .icon.searchForm__inputDate-iconCalendar:before {
-      background-position: -0.2em -118.7em;
+      background-position: -0.2em -148.7em;
       width: 1.6em;
       height: 1.6em;
   }
@@ -234,7 +270,7 @@
 
 
   .icon.searchForm__inputQuantity-iconDown:before {
-      background-position: -0.2em -120.7em;
+      background-position: -0.2em -150.7em;
       width: 1.4em;
       height: 0.8em;
   }
@@ -243,7 +279,7 @@
 
 
   .icon.searchForm__inputQuantity-iconPerson:before {
-      background-position: -0.2em -121.9em;
+      background-position: -0.2em -151.89999999999998em;
       width: 0.8em;
       height: 1.8em;
   }
