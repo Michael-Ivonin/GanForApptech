@@ -10,9 +10,15 @@ html(lang='ru')
     link(href='css/libs.min.css', rel='stylesheet')
     link(href='css/main.css', rel='stylesheet')
   body
+    // Facebook SDK JavaScript
+    div(id='fb-root')
+    script(type='text/javascript' src='js/fb-widget.js')
+
     //include ../blocks/header/_header
     include ../blocks/content/_content
 
     // Bootstrap core JavaScript
     // ==================================================
-    script(src='js/libs.min.js')
+    script(type='text/javascript' src='js/libs.min.js')
+    script(type='text/javascript' src='//vk.com/js/api/openapi.js?146')
+    script(type='text/javascript' src='js/vk-widget.js')

@@ -112,7 +112,7 @@ body {
     position: relative;
     top: -2px; }
 
-.greeting__header-entranceButton, .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
+.greeting__header-entranceButton, .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
   border: none;
   outline: none;
   background: none;
@@ -243,13 +243,13 @@ body {
   border: none;
   outline: none; }
 
-.searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
+.searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
   background: #ffc816;
   -webkit-border-radius: 0 5px 5px 0;
           border-radius: 0 5px 5px 0;
   padding: 25px 27px 25px 38px; }
 
-.searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text {
+.searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text, .communication__form-buttonSend-text {
   font-size: 0.813rem;
   color: white;
   text-transform: uppercase;
@@ -257,7 +257,7 @@ body {
   margin-right: 17px;
   letter-spacing: 1.32px; }
 
-.icon.searchForm__buttonFind-iconEnter, .icon.anyDevice__buttonStart-iconEnter, .icon.cooperation__buttonStart-iconEnter, .icon.articles__buttonMore-iconEnter {
+.icon.searchForm__buttonFind-iconEnter, .icon.anyDevice__buttonStart-iconEnter, .icon.cooperation__buttonStart-iconEnter, .icon.articles__buttonMore-iconEnter, .icon.communication__form-buttonSend-iconEnter {
   float: right;
   margin-top: 3px; }
 
@@ -687,6 +687,56 @@ body {
   display: inline-block;
   padding: 15px 35px 16px 47px; }
 
+.communication {
+  background-image: url(../img/communication-bg.jpg);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  padding-top: 146px;
+  padding-bottom: 136px; }
+
+#vk_groups, #vk_groups iframe, .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important; }
+
+.communication__item {
+  background: white;
+  width: 394px;
+  height: 230px;
+  float: left;
+  padding: 6px 6px 0;
+  -webkit-box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.28);
+          box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.28); }
+  .communication__item:nth-child(2) {
+    margin: 0 28px;
+    padding: 26px 29px;
+    text-align: center; }
+
+.communication__form-text {
+  font-size: 1.063rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 20px; }
+
+.communication__form-inputEmail {
+  width: 100%;
+  height: 46px;
+  background-color: rgba(221, 239, 253, 0.26);
+  color: #2c2c2c;
+  border: 1px solid #e1e1e1;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin-bottom: 24px;
+  font-size: 0.875rem;
+  text-align: center; }
+
+.communication__form-buttonSend {
+  padding: 14px 22px 15px 40px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
+
+.communication__form-buttonSend-text {
+  margin-right: 24px; }
+
 .icon {
   font-size: 10px; }
 
@@ -822,7 +872,7 @@ body {
   width: 1.4em;
   height: 1.1em; }
 
-.icon.searchForm__buttonFind-iconEnter:before, .icon.anyDevice__buttonStart-iconEnter:before, .icon.cooperation__buttonStart-iconEnter:before, .icon.articles__buttonMore-iconEnter:before {
+.icon.searchForm__buttonFind-iconEnter:before, .icon.anyDevice__buttonStart-iconEnter:before, .icon.cooperation__buttonStart-iconEnter:before, .icon.articles__buttonMore-iconEnter:before, .icon.communication__form-buttonSend-iconEnter:before {
   background-position: -0.2em -143.89999999999998em;
   width: 0.7em;
   height: 1.1em; }
@@ -876,7 +926,9 @@ body {
     width: 275px; }
     .articles__item_small img {
       width: 275px;
-      height: 265px; } }
+      height: 265px; }
+  .communication__item {
+    width: 360px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .greeting__header-logoLink {
@@ -892,7 +944,7 @@ body {
   .searchForm__inputQuantity {
     -webkit-border-radius: 0 5px 5px 0;
             border-radius: 0 5px 5px 0; }
-  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
+  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
     margin-top: 32px;
     -webkit-border-radius: 5px;
             border-radius: 5px;
@@ -922,13 +974,33 @@ body {
   .cooperation__item-text {
     font-size: 0.8rem; }
   .articles__itemsWrap {
-    float: none;
-    width: 613px;
-    margin: 0 auto; }
+    width: 100%; }
+  .articles__item_big {
+    width: 100%;
+    height: 460px; }
+    .articles__item_big:nth-child(odd) {
+      background-image: url(../img/articles__item_big-imgPlane.jpg);
+      -webkit-background-size: cover;
+              background-size: cover; }
+    .articles__item_big:nth-child(even) {
+      background-image: url(../img/articles__item_big-imgWoman.jpg);
+      -webkit-background-size: cover;
+              background-size: cover;
+      margin-left: 0; }
+    .articles__item_big img {
+      display: none; }
+  .articles__item_big-heading {
+    width: 560px;
+    top: 75%;
+    left: 3%;
+    line-height: 36px; }
   .articles__buttonMore {
     margin-top: 48px; }
-  .articles__item_big:nth-child(2) {
-    margin-left: 0; } }
+  .communication__item {
+    width: 293px;
+    height: 241px; }
+  .communication__form-buttonSend {
+    margin-top: 0; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .greeting__header-logoLink {
@@ -1000,7 +1072,7 @@ body {
   .searchForm__inputQuantity-inputNumber {
     width: -webkit-calc(100% - 22px);
     width: calc(100% - 22px); }
-  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
+  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
     margin-top: 30px;
     width: 275px;
     height: 50px;
@@ -1010,11 +1082,11 @@ body {
             box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
     padding: 0;
     vertical-align: middle; }
-  .searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text {
+  .searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text, .communication__form-buttonSend-text {
     margin-right: 0; }
-  .searchForm__buttonFind-text.visible-sm, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text, .visible-sm.articles__buttonMore-text {
+  .searchForm__buttonFind-text.visible-sm, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text, .visible-sm.articles__buttonMore-text, .visible-sm.communication__form-buttonSend-text {
     display: inline !important; }
-  .searchForm__buttonFind-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter {
+  .searchForm__buttonFind-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter, .communication__form-buttonSend-iconEnter {
     float: inherit !important;
     margin-top: 0 !important;
     margin-left: 27px;
@@ -1175,13 +1247,42 @@ body {
   .cooperation__buttonStart, .articles__buttonMore {
     margin-right: 0; }
   .articles {
-    padding-top: 99px; }
-  .anyDevice__heading {
+    padding: 99px 0; }
+  .articles__heading {
     font-size: 2.058rem;
     margin-bottom: 30px; }
-  .anyDevice__text {
+  .articles__text {
     font-size: 1.125rem;
-    margin-bottom: 61px; } }
+    margin-bottom: 61px; }
+  .articles__itemsWrap {
+    width: 100%; }
+  .articles__item_big {
+    width: 100%;
+    height: 320px; }
+    .articles__item_big:nth-child(odd) {
+      background-image: url(../img/articles__item_big-imgPlane.jpg);
+      -webkit-background-size: cover;
+              background-size: cover; }
+    .articles__item_big:nth-child(even) {
+      background-image: url(../img/articles__item_big-imgWoman.jpg);
+      -webkit-background-size: cover;
+              background-size: cover;
+      margin-left: 0; }
+    .articles__item_big img {
+      display: none; }
+  .articles__item_big-heading {
+    line-height: 36px; }
+  .articles__buttonMore {
+    margin-top: 60px; }
+  .communication {
+    padding: 69px 0; }
+    .communication .container {
+      position: relative; }
+  .communication__item:nth-child(2) {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0; } }
 
 @media (max-width: 767px) {
   body {
@@ -1244,7 +1345,7 @@ body {
   .searchForm__inputQuantity-inputNumber {
     width: -webkit-calc(100% - 22px);
     width: calc(100% - 22px); }
-  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
+  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
     margin-top: 9px;
     width: 283px;
     height: 50px;
@@ -1254,11 +1355,11 @@ body {
             box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
     padding: 0;
     vertical-align: middle; }
-  .searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text {
+  .searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text, .communication__form-buttonSend-text {
     margin-right: 0; }
-  .searchForm__buttonFind-text.visible-sm, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text, .visible-sm.articles__buttonMore-text {
+  .searchForm__buttonFind-text.visible-sm, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text, .visible-sm.articles__buttonMore-text, .visible-sm.communication__form-buttonSend-text {
     display: inline !important; }
-  .searchForm__buttonFind-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter {
+  .searchForm__buttonFind-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter, .communication__form-buttonSend-iconEnter {
     float: inherit !important;
     margin-top: 0 !important;
     margin-left: 27px;
@@ -1441,4 +1542,40 @@ body {
   .cooperation__item-text {
     margin-top: 24px;
     margin-bottom: 47px;
-    font-size: 0.875rem; } }
+    font-size: 0.875rem; }
+  .articles {
+    padding: 72px 0; }
+  .articles__heading {
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+    line-height: 27px; }
+  .articles__text {
+    font-size: 0.813rem;
+    margin-bottom: 40px;
+    line-height: 19px; }
+  .articles__itemsWrap {
+    width: 282px;
+    margin: 0 auto;
+    float: none; }
+  .articles__item_big {
+    width: 100%;
+    height: 126px;
+    overflow: hidden; }
+    .articles__item_big:nth-child(odd) {
+      background-image: url(../img/articles__item_big-imgPlane.jpg);
+      -webkit-background-size: cover;
+              background-size: cover; }
+    .articles__item_big:nth-child(even) {
+      background-image: url(../img/articles__item_big-imgWoman.jpg);
+      -webkit-background-size: cover;
+              background-size: cover;
+      margin-left: 0; }
+    .articles__item_big img {
+      display: none; }
+  .articles__item_big-heading {
+    font-size: 1.125rem;
+    line-height: 20px;
+    top: 66%; }
+  .articles__buttonMore {
+    padding: 17px 31px 17px 39px;
+    margin-top: 28px; } }

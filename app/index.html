@@ -11,6 +11,9 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
+    <!-- Facebook SDK JavaScript-->
+    <div id="fb-root"></div>
+    <script type="text/javascript" src="js/fb-widget.js"></script>
     <!--include ../blocks/header/_header-->
     <main class="content">
       <!--include __benefits-->
@@ -19,69 +22,46 @@
       <!--include __formalization-->
       <!--include __anyDevice-->
       <!--include __cooperation-->
-      <section class="articles">
+      <!--include __articles-->
+      <div class="communication">
         <div class="container">
-          <h3 class="articles__heading">Будьте в курсе последних новостей из мира деловых путешествий!</h3>
-          <p class="articles__text">В наших статьях вы найдете только самые полезные советы и рекомендации</p>
-          <div class="articles__itemsWrap">
-            <article class="articles__item_big">
-              <img class="articles__item_big-imgPlane" src="img/articles__item_big-imgPlane.jpg" alt="Plane">
-              <a class="articles__item_big-heading" href="#">Топ-10 направлений из Киева куда угодно от 46 евро!</a>
-            </article>
-            <!-- /.articles__item_big-->
-            <article class="articles__item_big">
-              <img class="articles__item_big-imgWoman" src="img/articles__item_big-imgWoman.jpg" alt="Woman">
-              <a class="articles__item_big-heading" href="#">airBaltic: предлагает сыграть в игру "Яйца или самолеты" и выиграть 2...</a>
-            </article>
-            <!-- /.articles__item_big-->
-            <article class="articles__item_big visible-md visible-sm visible-xs">
-              <img class="articles__item_big-imgPlane" src="img/articles__item_big-imgPlane.jpg" alt="Plane">
-              <a class="articles__item_big-heading" href="#">Топ-10 направлений из Киева куда угодно от 46 евро!</a>
-            </article>
-            <!-- /.articles__item_big-->
-            <article class="articles__item_big visible-md visible-sm visible-xs">
-              <img class="articles__item_big-imgWoman" src="img/articles__item_big-imgWoman.jpg" alt="Woman">
-              <a class="articles__item_big-heading" href="#">airBaltic: предлагает сыграть в игру "Яйца или самолеты" и выиграть 2...</a>
-            </article>
-            <!-- /.articles__item_big-->
-            <article class="articles__item_small visible-lg">
-              <img class="articles__item_small-imgMan" src="img/articles__item_small-imgMan.jpg" alt="Man">
-              <p class="articles__item_small-textDate">17.02.2017</p>
-              <a class="articles__item_small-textDescription" href="#">Travelplanet: пакетный тур из Варшавы&nbsp;на Острова Зелёного Мыса (Кабо-Верде) за 758 евро на одного "всё включено"!</a>
-            </article>
-            <!-- /.articles__item_small-->
-            <article class="articles__item_small visible-lg">
-              <img class="articles__item_small-imgClothes" src="img/articles__item_small-imgClothes.jpg" alt="Clothes">
-              <p class="articles__item_small-textDate">17.02.2017</p>
-              <a class="articles__item_small-textDescription" href="#">Подборка вылетов из Минска: летим в&nbsp;Прагу, Амстердам, Хельсинки, Кутаиси&nbsp;и Тель-Авив от 138 евро за перелет в обе стороны в течение года!</a>
-            </article>
-            <!-- /.articles__item_small-->
-            <article class="articles__item_small visible-lg">
-              <img class="articles__item_small-imgPeople" src="img/articles__item_small-imgPeople.jpg" alt="People">
-              <p class="articles__item_small-textDate">17.02.2017</p>
-              <a class="articles__item_small-textDescription" href="#">airBaltic: предлагает сыграть в игру "Яйца или самолеты" и выиграть 2 билета в Мадрид + промокод внутри!</a>
-            </article>
-            <!-- /.articles__item_small-->
-            <article class="articles__item_small visible-lg">
-              <img class="articles__item_small-imgManAndLaptop" src="img/articles__item_small-imgManAndLaptop.jpg" alt="ManAndLaptop">
-              <p class="articles__item_small-textDate">17.02.2017</p>
-              <a class="articles__item_small-textDescription" href="#">Travelplanet: пакетный тур из Варшавы&nbsp;на Острова Зелёного Мыса (Кабо-Верде) за 758 евро на одного "всё включено"!</a>
-            </article>
-            <!-- /.articles__item_small-->
+          <div class="communication__item">
+            <!-- FB widget-->
+            <div class="fb-page" data-href="https://ru-ru.facebook.com/tinkoffbank" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+              <blockquote class="fb-xfbml-parse-ignore" cite="https://ru-ru.facebook.com/tinkoffbank">
+                <a href="https://ru-ru.facebook.com/tinkoffbank">Тинькофф Банк</a>
+              </blockquote>
+            </div>
+            <!-- /.fb-page-->
           </div>
-          <!-- /.articles__itemsWrap-->
-          <a class="articles__buttonMore" href="#">
-            <span class="articles__buttonMore-text">Читать больше статей</span>
-            <span class="icon articles__buttonMore-iconEnter"></span>
-          </a>
+          <!-- /.communication__item-->
+          <div class="communication__item">
+            <form class="communication__form">
+              <label class="communication__form-text" for="email">Подпишитесь на свежие новости и спецпредложения нашего сервиса:</label>
+              <input class="communication__form-inputEmail" placeholder="Ваша электронная почта" type="email" id="email" required>
+              <button class="communication__form-buttonSend" type="submit">
+                <span class="communication__form-buttonSend-text">Отправить</span>
+                <span class="icon communication__form-buttonSend-iconEnter"></span>
+              </button>
+            </form>
+            <!-- /.communication__form-->
+          </div>
+          <!-- /.communication__item-->
+          <div class="communication__item">
+            <!-- VK widget-->
+            <div id="vk_groups"></div>
+          </div>
+          <!-- /.communication__item-->
         </div>
-        <!-- / .container-->
-      </section>
-      <!-- /.articles-->
+        <!-- /.container-->
+      </div>
+      <!-- /.communication-->
     </main>
     <!-- /.content-->
     <!-- Bootstrap core JavaScript-->
     <!-- ==================================================-->
-    <script src="js/libs.min.js"></script>
+    <script type="text/javascript" src="js/libs.min.js"></script>
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
+    <script type="text/javascript" src="js/vk-widget.js"></script>
   </body>
 </html>

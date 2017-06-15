@@ -1,0 +1,51 @@
+.communication
+  background-image: url(../img/communication-bg.jpg)
+  background-size: cover
+  background-position: center
+  padding-top: 146px
+  padding-bottom: 136px
+
+#vk_groups, #vk_groups iframe, .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style]
+  width: 100% !important
+
+.communication__item
+  background: $white
+  width: 394px
+  height: 230px
+  float: left
+  padding: 6px 6px 0
+  box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.28)
+
+  &:nth-child(2)
+    margin: 0 28px
+    padding: 26px 29px
+    text-align: center
+
+.communication__form-text
+  font-size: 1.063rem
+  font-weight: 700
+  color: $grey9
+  margin-bottom: 20px
+
+.communication__form-inputEmail
+  width: 100%
+  height: 46px
+  background-color: rgba(221, 239, 253, 0.26)
+  color: $grey9
+  border: 1px solid $superDarkWhite
+  border-radius: 3px
+  margin-bottom: 24px
+  font-size: 0.875rem
+  text-align: center
+
+.communication__form-buttonSend
+  @extend .searchForm__buttonFind
+  padding: 14px 22px 15px 40px
+  border-radius: 3px
+
+.communication__form-buttonSend-text
+  @extend .searchForm__buttonFind-text
+  margin-right: 24px
+
+.communication__form-buttonSend-iconEnter
+  @extend .searchForm__buttonFind-iconEnter

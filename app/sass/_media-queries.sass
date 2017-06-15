@@ -35,6 +35,9 @@
       width: 275px
       height: 265px
 
+  .communication__item
+    width: 360px
+
 
 
 @media (min-width: 992px) and (max-width: 1199px)
@@ -93,16 +96,38 @@
     font-size: 0.8rem
 
   .articles__itemsWrap
-    float: none
-    width: 613px
-    margin: 0 auto
+    width: 100%
+
+  .articles__item_big
+    width: 100%
+    height: 460px
+
+    &:nth-child(odd)
+      background-image: url(../img/articles__item_big-imgPlane.jpg)
+      background-size: cover
+    &:nth-child(even)
+      background-image: url(../img/articles__item_big-imgWoman.jpg)
+      background-size: cover
+      margin-left: 0
+
+    img
+      display: none
+
+  .articles__item_big-heading
+    width: 560px
+    top: 75%
+    left: 3%
+    line-height: 36px
 
   .articles__buttonMore
     margin-top: 48px
 
-  .articles__item_big
-    &:nth-child(2)
-      margin-left: 0
+  .communication__item
+    width: 293px
+    height: 241px
+
+  .communication__form-buttonSend
+    margin-top: 0
 
 
 
@@ -402,18 +427,52 @@
     margin-right: 0
 
   .articles
-    padding-top: 99px
+    padding: 99px 0
 
-  .anyDevice__heading
+  .articles__heading
     font-size: 2.058rem
     margin-bottom: 30px
 
-  .anyDevice__text
+  .articles__text
     font-size: 1.125rem
     margin-bottom: 61px
 
-  .articles__item_big
+  .articles__itemsWrap
+    width: 100%
 
+  .articles__item_big
+    width: 100%
+    height: 320px
+
+    &:nth-child(odd)
+      background-image: url(../img/articles__item_big-imgPlane.jpg)
+      background-size: cover
+    &:nth-child(even)
+      background-image: url(../img/articles__item_big-imgWoman.jpg)
+      background-size: cover
+      margin-left: 0
+
+    img
+      display: none
+
+  .articles__item_big-heading
+    line-height: 36px
+
+  .articles__buttonMore
+    margin-top: 60px
+
+  .communication
+    padding: 69px 0
+
+    .container
+      position: relative
+
+  .communication__item
+    &:nth-child(2)
+      margin: 0
+      position: absolute
+      top: 0
+      left: 0
 
 
 
@@ -729,3 +788,46 @@
     margin-top: 24px
     margin-bottom: 47px
     font-size: 0.875rem
+
+  .articles
+    padding: 72px 0
+
+  .articles__heading
+    font-size: 1.25rem
+    margin-bottom: 24px
+    line-height: 27px
+
+  .articles__text
+    font-size: 0.813rem
+    margin-bottom: 40px
+    line-height: 19px
+
+  .articles__itemsWrap
+    width: 282px
+    margin: 0 auto
+    float: none
+
+  .articles__item_big
+    width: 100%
+    height: 126px
+    overflow: hidden
+
+    &:nth-child(odd)
+      background-image: url(../img/articles__item_big-imgPlane.jpg)
+      background-size: cover
+    &:nth-child(even)
+      background-image: url(../img/articles__item_big-imgWoman.jpg)
+      background-size: cover
+      margin-left: 0
+
+    img
+      display: none
+
+  .articles__item_big-heading
+    font-size: 1.125rem
+    line-height: 20px
+    top: 66%
+
+  .articles__buttonMore
+    padding: 17px 31px 17px 39px
+    margin-top: 28px
