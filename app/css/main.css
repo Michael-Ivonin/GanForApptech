@@ -112,7 +112,7 @@ body {
     position: relative;
     top: -2px; }
 
-.greeting__header-entranceButton, .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart {
+.greeting__header-entranceButton, .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
   border: none;
   outline: none;
   background: none;
@@ -243,13 +243,13 @@ body {
   border: none;
   outline: none; }
 
-.searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart {
+.searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
   background: #ffc816;
   -webkit-border-radius: 0 5px 5px 0;
           border-radius: 0 5px 5px 0;
   padding: 25px 27px 25px 38px; }
 
-.searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text {
+.searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text {
   font-size: 0.813rem;
   color: white;
   text-transform: uppercase;
@@ -257,7 +257,7 @@ body {
   margin-right: 17px;
   letter-spacing: 1.32px; }
 
-.icon.searchForm__buttonFind-iconEnter, .icon.anyDevice__buttonStart-iconEnter, .icon.cooperation__buttonStart-iconEnter {
+.icon.searchForm__buttonFind-iconEnter, .icon.anyDevice__buttonStart-iconEnter, .icon.cooperation__buttonStart-iconEnter, .icon.articles__buttonMore-iconEnter {
   float: right;
   margin-top: 3px; }
 
@@ -566,7 +566,7 @@ body {
   margin-bottom: 73px;
   line-height: 31px; }
 
-.anyDevice__buttonStart, .cooperation__buttonStart {
+.anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
   padding: 17px 30px 17px 41px;
   -webkit-border-radius: 3px;
           border-radius: 3px;
@@ -611,9 +611,81 @@ body {
   color: #2c2c2c;
   line-height: 24px; }
 
-.cooperation__buttonStart {
+.cooperation__buttonStart, .articles__buttonMore {
   float: none;
   margin-right: 0; }
+
+.articles {
+  background: white;
+  padding: 128px 0;
+  text-align: center; }
+
+.articles__heading {
+  font-size: 2.25rem;
+  color: #323232;
+  margin-bottom: 27px;
+  letter-spacing: 0.7px; }
+
+.articles__text {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #323232;
+  margin-bottom: 58px; }
+
+.articles__itemsWrap {
+  float: left; }
+
+.articles__item_big {
+  position: relative;
+  float: left;
+  margin-bottom: 8px; }
+  .articles__item_big:nth-child(2) {
+    margin-left: 10px; }
+
+.articles__item_big-imgPlane, .articles__item_big-imgWoman {
+  width: 613px;
+  height: 320px; }
+
+.articles__item_big-heading {
+  position: absolute;
+  top: 69%;
+  left: 4%;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white; }
+
+.articles__item_small {
+  width: 300px;
+  float: left;
+  text-align: initial;
+  margin-bottom: 56px; }
+  .articles__item_small:nth-child(6) {
+    margin-left: 13px; }
+  .articles__item_small:nth-child(7) {
+    margin-left: 10px; }
+  .articles__item_small:nth-child(8) {
+    margin-left: 13px; }
+
+.articles__item_small-imgMan, .articles__item_small-imgClothes, .articles__item_small-imgPeople, .articles__item_small-imgManAndLaptop {
+  width: 300px;
+  height: 290px; }
+
+.articles__item_small-textDate {
+  margin-top: 26px;
+  margin-bottom: 15px;
+  font-size: 0.876rem;
+  color: #81b3dc; }
+
+.articles__item_small-textDescription {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  line-height: 27px; }
+
+.articles__buttonMore {
+  display: inline-block;
+  padding: 15px 35px 16px 47px; }
 
 .icon {
   font-size: 10px; }
@@ -750,7 +822,7 @@ body {
   width: 1.4em;
   height: 1.1em; }
 
-.icon.searchForm__buttonFind-iconEnter:before, .icon.anyDevice__buttonStart-iconEnter:before, .icon.cooperation__buttonStart-iconEnter:before {
+.icon.searchForm__buttonFind-iconEnter:before, .icon.anyDevice__buttonStart-iconEnter:before, .icon.cooperation__buttonStart-iconEnter:before, .icon.articles__buttonMore-iconEnter:before {
   background-position: -0.2em -143.89999999999998em;
   width: 0.7em;
   height: 1.1em; }
@@ -794,8 +866,17 @@ body {
     width: 880px; }
   .eventually__banner {
     width: 662px; }
-  .anyDevice__buttonStart, .cooperation__buttonStart {
-    margin-top: 0; } }
+  .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
+    margin-top: 0; }
+  .articles__item_big img {
+    width: 563px; }
+  .articles__item_big-heading {
+    font-size: 1.9rem; }
+  .articles__item_small {
+    width: 275px; }
+    .articles__item_small img {
+      width: 275px;
+      height: 265px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .greeting__header-logoLink {
@@ -811,7 +892,7 @@ body {
   .searchForm__inputQuantity {
     -webkit-border-radius: 0 5px 5px 0;
             border-radius: 0 5px 5px 0; }
-  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart {
+  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
     margin-top: 32px;
     -webkit-border-radius: 5px;
             border-radius: 5px;
@@ -834,12 +915,20 @@ body {
     margin-bottom: 73px; }
   .eventually__listHeading, .eventually__list {
     margin-left: 112px; }
-  .anyDevice__buttonStart, .cooperation__buttonStart {
+  .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
     margin-top: 0; }
   .cooperation__heading {
     font-size: 1.96rem; }
   .cooperation__item-text {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+  .articles__itemsWrap {
+    float: none;
+    width: 613px;
+    margin: 0 auto; }
+  .articles__buttonMore {
+    margin-top: 48px; }
+  .articles__item_big:nth-child(2) {
+    margin-left: 0; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .greeting__header-logoLink {
@@ -911,7 +1000,7 @@ body {
   .searchForm__inputQuantity-inputNumber {
     width: -webkit-calc(100% - 22px);
     width: calc(100% - 22px); }
-  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart {
+  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
     margin-top: 30px;
     width: 275px;
     height: 50px;
@@ -921,11 +1010,11 @@ body {
             box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
     padding: 0;
     vertical-align: middle; }
-  .searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text {
+  .searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text {
     margin-right: 0; }
-  .searchForm__buttonFind-text.visible-sm, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text {
+  .searchForm__buttonFind-text.visible-sm, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text, .visible-sm.articles__buttonMore-text {
     display: inline !important; }
-  .searchForm__buttonFind-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter {
+  .searchForm__buttonFind-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter {
     float: inherit !important;
     margin-top: 0 !important;
     margin-left: 27px;
@@ -1059,13 +1148,13 @@ body {
     margin-right: 0;
     margin-bottom: 38px;
     line-height: 27px; }
-  .anyDevice__buttonStart, .cooperation__buttonStart {
+  .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
     padding: 17px 30px 17px 41px;
     width: auto;
     height: auto;
     margin-right: 100px;
     margin-top: 0; }
-  .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter {
+  .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter {
     margin-left: 17px;
     margin-top: 5px !important; }
   .cooperation {
@@ -1083,8 +1172,16 @@ body {
     width: 358px; }
   .cooperation__item-text {
     margin-bottom: 64px; }
-  .cooperation__buttonStart {
-    margin-right: 0; } }
+  .cooperation__buttonStart, .articles__buttonMore {
+    margin-right: 0; }
+  .articles {
+    padding-top: 99px; }
+  .anyDevice__heading {
+    font-size: 2.058rem;
+    margin-bottom: 30px; }
+  .anyDevice__text {
+    font-size: 1.125rem;
+    margin-bottom: 61px; } }
 
 @media (max-width: 767px) {
   body {
@@ -1147,7 +1244,7 @@ body {
   .searchForm__inputQuantity-inputNumber {
     width: -webkit-calc(100% - 22px);
     width: calc(100% - 22px); }
-  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart {
+  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
     margin-top: 9px;
     width: 283px;
     height: 50px;
@@ -1157,11 +1254,11 @@ body {
             box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
     padding: 0;
     vertical-align: middle; }
-  .searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text {
+  .searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text {
     margin-right: 0; }
-  .searchForm__buttonFind-text.visible-sm, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text {
+  .searchForm__buttonFind-text.visible-sm, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text, .visible-sm.articles__buttonMore-text {
     display: inline !important; }
-  .searchForm__buttonFind-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter {
+  .searchForm__buttonFind-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter {
     float: inherit !important;
     margin-top: 0 !important;
     margin-left: 27px;
@@ -1321,13 +1418,13 @@ body {
     font-size: 0.875rem;
     float: none;
     line-height: 22px; }
-  .anyDevice__buttonStart, .cooperation__buttonStart {
+  .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
     padding: 17px 13px 17px 23px;
     width: auto;
     height: auto;
     margin: 0;
     float: none; }
-  .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter {
+  .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter {
     margin-left: 17px;
     margin-top: 5px !important; }
   .cooperation {

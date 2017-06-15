@@ -1,0 +1,92 @@
+.articles
+  background: $white
+  padding: 128px 0
+  text-align: center
+
+.articles__heading
+  font-size: 2.25rem
+  color: $grey8
+  margin-bottom: 27px
+  letter-spacing: 0.7px
+
+.articles__text
+  font-size: 1.125rem
+  font-weight: 300
+  color: $grey8
+  margin-bottom: 58px
+
+.articles__itemsWrap
+  float: left
+
+.articles__item_big
+  position: relative
+  float: left
+  margin-bottom: 8px
+
+  &:nth-child(2)
+    margin-left: 10px
+
+.articles__item_big-imgPlane
+  width: 613px
+  height: 320px
+
+.articles__item_big-heading
+  position: absolute
+  top: 69%
+  left: 4%
+  text-align: left
+  font-size: 2rem
+  font-weight: 500
+  color: $white
+
+.articles__item_big-imgWoman
+  @extend .articles__item_big-imgPlane
+
+.articles__item_small
+  width: 300px
+  float: left
+  text-align: initial
+  margin-bottom: 56px
+
+  &:nth-child(6)
+    margin-left: 13px
+  &:nth-child(7)
+    margin-left: 10px
+  &:nth-child(8)
+    margin-left: 13px
+
+.articles__item_small-imgMan
+  width: 300px
+  height: 290px
+
+.articles__item_small-imgClothes
+  @extend .articles__item_small-imgMan
+
+.articles__item_small-imgPeople
+  @extend .articles__item_small-imgMan
+
+.articles__item_small-imgManAndLaptop
+  @extend .articles__item_small-imgMan
+
+.articles__item_small-textDate
+  margin-top: 26px
+  margin-bottom: 15px
+  font-size: 0.876rem
+  color: $blue
+
+.articles__item_small-textDescription
+  font-size: 1rem
+  font-weight: 700
+  color: $grey9
+  line-height: 27px
+
+.articles__buttonMore
+  @extend .cooperation__buttonStart
+  display: inline-block
+  padding: 15px 35px 16px 47px
+
+.articles__buttonMore-text
+  @extend .cooperation__buttonStart-text
+
+.articles__buttonMore-iconEnter
+  @extend .cooperation__buttonStart-iconEnter
