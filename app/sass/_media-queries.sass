@@ -126,8 +126,19 @@
     width: 293px
     height: 241px
 
+  .communication__form
+    padding: 15px 9px
+
   .communication__form-buttonSend
     margin-top: 0
+
+  .footerTop__item
+    &:nth-child(1)
+      margin-right: 90px
+    &:nth-child(2)
+      margin-right: 90px
+    &:nth-child(3)
+      margin-right: 90px
 
 
 
@@ -463,16 +474,65 @@
 
   .communication
     padding: 69px 0
+    text-align: center
 
-    .container
-      position: relative
+  .communication__itemsWrap
+    display: inline-flex
+    flex-direction: column
 
   .communication__item
+    &:nth-child(1)
+      order: 2
+      margin: 22px 0
     &:nth-child(2)
+      order: 1
       margin: 0
-      position: absolute
-      top: 0
-      left: 0
+    &:nth-child(3)
+      order: 3
+
+  .communication__form-buttonSend
+    padding: 14px 22px 15px 40px
+    margin-top: 0
+    width: auto
+    height: auto
+
+  .footer
+    padding-top: 71px
+
+  .footerTop
+    text-align: center
+
+  .footerTop__item
+
+    &:nth-child(1)
+      margin-left: 119px
+      margin-right: 116px
+    &:nth-child(2)
+      margin-right: 0
+    &:nth-child(3)
+      margin-left: 132px
+      margin-right: 161px
+
+  .footerBottom
+    padding-bottom: 36px
+
+    .container
+      display: flex
+      flex-direction: column
+
+  .footerBottom-text
+    &:nth-child(1)
+      float: none
+      order: 1
+      margin-bottom: 12px
+    &:nth-child(3)
+      float: none
+      order: 2
+      margin-bottom: 28px
+
+  .footerBottom__socials
+    order: 3
+    margin: 0 auto
 
 
 
@@ -831,3 +891,88 @@
   .articles__buttonMore
     padding: 17px 31px 17px 39px
     margin-top: 28px
+
+  .communication
+    padding: 72px 0
+    text-align: center
+
+  .communication__itemsWrap
+    display: inline-flex
+    flex-direction: column
+
+  .communication__item
+    width: 282px
+    height: 241px
+
+    &:nth-child(1)
+      order: 2
+      margin: 22px 0
+    &:nth-child(2)
+      order: 1
+      margin: 0
+      height: auto
+    &:nth-child(3)
+      order: 3
+
+  .communication__form
+    padding: 27px 9px 36px 9px
+
+  .communication__form-text
+    font-size: 0.875rem
+    line-height: 17px
+    margin-bottom: 18px
+
+  .communication__form-inputEmail
+    margin-bottom: 10px
+
+  .communication__form-buttonSend
+    padding: 14px 22px 15px 40px
+    margin-top: 0
+    width: 100%
+    height: auto
+
+  .footer
+    padding-top: 61px
+
+  .footerTop
+    text-align: center
+
+  .footerTop__item
+    float: none
+    margin-bottom: 23px
+
+    &:nth-child(1)
+      margin-left: 0
+      margin-right: 0
+    &:nth-child(2)
+      margin-right: 0
+    &:nth-child(3)
+      margin-left: 0
+      margin-right: 0
+
+  .footerTop__item-list
+    display: inline-block
+
+  .footerTop__item-heading
+    margin-bottom: 21px
+
+  .footerBottom
+    padding-bottom: 36px
+
+    .container
+      display: flex
+      flex-direction: column
+
+  .footerBottom-text
+    &:nth-child(1)
+      float: none
+      order: 1
+      margin-bottom: 12px
+    &:nth-child(3)
+      float: none
+      order: 2
+      margin-bottom: 28px
+
+  .footerBottom__socials
+    order: 3
+    margin: 0 auto

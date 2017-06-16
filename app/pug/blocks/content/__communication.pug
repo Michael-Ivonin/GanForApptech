@@ -1,24 +1,26 @@
 .communication
   .container
-    .communication__item
-      // FB widget
-      .fb-page(data-href="https://ru-ru.facebook.com/tinkoffbank" data-width='500' data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true")
-        blockquote(cite="https://ru-ru.facebook.com/tinkoffbank" class="fb-xfbml-parse-ignore")
-          a(href="https://ru-ru.facebook.com/tinkoffbank") Тинькофф Банк
-      // /.fb-page
-    // /.communication__item
-    .communication__item
-      form.communication__form
-        label.communication__form-text(for='email') Подпишитесь на свежие новости и спецпредложения нашего сервиса:
-        input.communication__form-inputEmail(placeholder='Ваша электронная почта' type='email' id='email' required)
-        button.communication__form-buttonSend(type='submit')
-          span.communication__form-buttonSend-text Отправить
-          span.icon.communication__form-buttonSend-iconEnter
-      // /.communication__form
-    // /.communication__item
-    .communication__item
-      // VK widget
-      div(id='vk_groups')
-    // /.communication__item
+    .communication__itemsWrap
+      .communication__item
+        // FB widget
+        .fb-page(data-href="https://ru-ru.facebook.com/tinkoffbank" data-width='500' data-height='500' data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true")
+          blockquote(cite="https://ru-ru.facebook.com/tinkoffbank" class="fb-xfbml-parse-ignore")
+            a(href="https://ru-ru.facebook.com/tinkoffbank") Тинькофф Банк
+        // /.fb-page
+      // /.communication__item
+      .communication__item
+        form.communication__form
+          label.communication__form-text(for='email') Подпишитесь на свежие новости и спецпредложения нашего сервиса:
+          input.communication__form-inputEmail(placeholder='Ваша электронная почта' type='email' id='email' required)
+          button.communication__form-buttonSend(type='submit')
+            span.communication__form-buttonSend-text Отправить
+            span.icon.communication__form-buttonSend-iconEnter
+        // /.communication__form
+      // /.communication__item
+      .communication__item
+        // VK widget
+        div(id='vk_groups')
+      // /.communication__item
+    // /.communication__itemWrap
   // /.container
 // /.communication
