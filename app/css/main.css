@@ -112,7 +112,7 @@ body {
     position: relative;
     top: -2px; }
 
-.greeting__header-entranceButton, .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
+.greeting__header-entranceButton, .searchForm__buttonFind, .complex__buttonStart, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
   border: none;
   outline: none;
   background: none;
@@ -243,13 +243,13 @@ body {
   border: none;
   outline: none; }
 
-.searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
+.searchForm__buttonFind, .complex__buttonStart, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
   background: #ffc816;
   -webkit-border-radius: 0 5px 5px 0;
           border-radius: 0 5px 5px 0;
   padding: 25px 27px 25px 38px; }
 
-.searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text, .communication__form-buttonSend-text {
+.searchForm__buttonFind-text, .complex__buttonStart-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text, .communication__form-buttonSend-text {
   font-size: 0.813rem;
   color: white;
   text-transform: uppercase;
@@ -257,7 +257,7 @@ body {
   margin-right: 17px;
   letter-spacing: 1.32px; }
 
-.icon.searchForm__buttonFind-iconEnter, .icon.anyDevice__buttonStart-iconEnter, .icon.cooperation__buttonStart-iconEnter, .icon.articles__buttonMore-iconEnter, .icon.communication__form-buttonSend-iconEnter {
+.icon.searchForm__buttonFind-iconEnter, .icon.complex__buttonStart-iconEnter, .icon.anyDevice__buttonStart-iconEnter, .icon.cooperation__buttonStart-iconEnter, .icon.articles__buttonMore-iconEnter, .icon.communication__form-buttonSend-iconEnter {
   float: right;
   margin-top: 3px; }
 
@@ -373,6 +373,82 @@ body {
   font-weight: 500;
   margin-top: 22px;
   line-height: 21px; }
+
+.complex {
+  padding-top: 110px;
+  padding-bottom: 115px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#81b2da), to(#bddcf4));
+  background: -webkit-linear-gradient(bottom, #81b2da 0%, #bddcf4 100%);
+  background: -o-linear-gradient(bottom, #81b2da 0%, #bddcf4 100%);
+  background: linear-gradient(0deg, #81b2da 0%, #bddcf4 100%);
+  text-align: center; }
+
+.complex__heading {
+  font-size: 2.25rem;
+  color: #323232;
+  margin-bottom: 26px; }
+
+.complex__text {
+  font-size: 1.063rem;
+  font-weight: 300;
+  color: #323232;
+  margin-bottom: 70px;
+  line-height: 25px; }
+
+.complex__itemsWrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.complex__item {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.21);
+          box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.21);
+  width: 293px;
+  height: 380px;
+  padding: 0 17px; }
+  .complex__item .icon {
+    position: relative;
+    top: -34px; }
+    .complex__item .icon::before {
+      margin-bottom: -6px; }
+
+.complex__item-heading {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #323232;
+  text-transform: uppercase;
+  margin-bottom: 24px; }
+
+.complex__item-text {
+  font-size: 0.938rem;
+  font-weight: 300;
+  color: #2c2c2c;
+  line-height: 27px; }
+
+.complex__item-text_strong {
+  font-weight: 900; }
+
+.complex__buttonStart, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
+  display: inline-block;
+  margin-top: 64px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding: 17px 23px 17px 39px; }
+  .complex__buttonStart:hover, .anyDevice__buttonStart:hover, .cooperation__buttonStart:hover, .articles__buttonMore:hover {
+    text-decoration: none; }
+  .complex__buttonStart:focus, .anyDevice__buttonStart:focus, .cooperation__buttonStart:focus, .articles__buttonMore:focus {
+    text-decoration: none; }
+
+.complex__buttonStart-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text {
+  margin-right: 20px; }
 
 .steps {
   padding-top: 117px;
@@ -568,11 +644,9 @@ body {
 
 .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore {
   padding: 17px 30px 17px 41px;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
   float: right;
   clear: both;
-  margin-right: 272px;
+  margin-right: 269px;
   margin-top: 0; }
 
 .cooperation {
@@ -807,8 +881,8 @@ body {
   display: inline-block;
   background-image: url("../img/svg-sprite.svg");
   background-repeat: no-repeat;
-  -webkit-background-size: 21.4em 161.2em;
-          background-size: 21.4em 161.2em; }
+  -webkit-background-size: 21.4em 201.7em;
+          background-size: 21.4em 201.7em; }
 
 .no-svg .icon:before {
   background-image: url("../img/svg-sprite.png"); }
@@ -843,143 +917,163 @@ body {
   width: 9.9em;
   height: 10.7em; }
 
-.icon.cooperation__item-iconDescription:before {
+.icon.complex__item-iconPlane:before {
   background-position: -0.2em -66.3em;
+  width: 9em;
+  height: 9.9em; }
+
+.icon.complex__item-iconResidence:before {
+  background-position: -0.2em -76.60000000000001em;
+  width: 9em;
+  height: 9.9em; }
+
+.icon.complex__item-iconStar:before {
+  background-position: -0.2em -86.9em;
+  width: 8.6em;
+  height: 9.3em; }
+
+.icon.complex__item-iconTransfer:before {
+  background-position: -0.2em -96.60000000000001em;
+  width: 9em;
+  height: 9.8em; }
+
+.icon.cooperation__item-iconDescription:before {
+  background-position: -0.2em -106.8em;
   width: 10.1em;
   height: 11.1em; }
 
 .icon.cooperation__item-iconProfit:before {
-  background-position: -0.2em -77.8em;
+  background-position: -0.2em -118.3em;
   width: 10.1em;
   height: 11.1em; }
 
 .icon.cooperation__item-iconRegistration:before {
-  background-position: -0.2em -89.3em;
+  background-position: -0.2em -129.79999999999998em;
   width: 9.8em;
   height: 10.9em; }
 
 .icon.cooperation__item-iconStar:before {
-  background-position: -0.2em -100.60000000000001em;
+  background-position: -0.2em -141.1em;
   width: 10.1em;
   height: 11.1em; }
 
 .icon.eventually__list-mark:before {
-  background-position: -0.2em -112.10000000000001em;
+  background-position: -0.2em -152.6em;
   width: 2em;
   height: 2em; }
 
 .icon.footerBottom__socials-iconFacebook:before {
-  background-position: -0.2em -114.5em;
+  background-position: -0.2em -155em;
   width: 0.9em;
   height: 1.6em; }
 
 .icon.footerBottom__socials-iconGooglePlus:before {
-  background-position: -0.2em -116.5em;
+  background-position: -0.2em -157em;
   width: 2.1em;
   height: 1.2em; }
 
 .icon.footerBottom__socials-iconInstagram:before {
-  background-position: -0.2em -118.10000000000001em;
+  background-position: -0.2em -158.6em;
   width: 1.6em;
   height: 1.6em; }
 
 .icon.footerBottom__socials-iconTwitter:before {
-  background-position: -0.2em -120.10000000000001em;
+  background-position: -0.2em -160.6em;
   width: 1.6em;
   height: 1.3em; }
 
 .icon.greeting__header-entranceButton-iconEnter:before {
-  background-position: -0.2em -121.8em;
+  background-position: -0.2em -162.29999999999998em;
   width: 1.3em;
   height: 0.7em; }
 
 .icon.greeting__header-entranceIconLogin:before {
-  background-position: -0.2em -122.9em;
+  background-position: -0.2em -163.39999999999998em;
   width: 1.3em;
   height: 1.3em; }
 
 .icon.greeting__header-infoIconPhone:before {
-  background-position: -0.2em -124.60000000000001em;
+  background-position: -0.2em -165.1em;
   width: 1.2em;
   height: 1.2em; }
 
 .icon.greeting__header-logoLink-icon:before {
-  background-position: -0.2em -126.2em;
+  background-position: -0.2em -166.7em;
   width: 21em;
   height: 5.7em; }
 
 .icon.greeting__services-itemIconInsurance:before {
-  background-position: -0.2em -132.29999999999998em;
+  background-position: -0.2em -172.79999999999998em;
   width: 1.8em;
   height: 2.1em; }
 
 .icon.greeting__services-itemIconReport:before {
-  background-position: -0.2em -134.79999999999998em;
+  background-position: -0.2em -175.29999999999998em;
   width: 1.5em;
   height: 1.9em; }
 
 .icon.greeting__services-itemIconResidence:before {
-  background-position: -0.2em -137.1em;
+  background-position: -0.2em -177.6em;
   width: 2.2em;
   height: 2.1em; }
 
 .icon.greeting__services-itemIconTicket:before {
-  background-position: -0.2em -139.6em;
+  background-position: -0.2em -180.1em;
   width: 2.7em;
   height: 2.5em; }
 
 .icon.greeting__services-itemIconTransfer:before {
-  background-position: -0.2em -142.5em;
+  background-position: -0.2em -183em;
   width: 2.3em;
   height: 1.8em; }
 
 .icon.greeting__socials-iconFacebook:before {
-  background-position: -0.2em -144.7em;
+  background-position: -0.2em -185.2em;
   width: 0.8em;
   height: 1.4em; }
 
 .icon.greeting__socials-iconGooglePlus:before {
-  background-position: -0.2em -146.5em;
+  background-position: -0.2em -187em;
   width: 1.7em;
   height: 1em; }
 
 .icon.greeting__socials-iconInstagram:before {
-  background-position: -0.2em -147.89999999999998em;
+  background-position: -0.2em -188.39999999999998em;
   width: 1.4em;
   height: 1.4em; }
 
 .icon.greeting__socials-iconTwitter:before {
-  background-position: -0.2em -149.7em;
+  background-position: -0.2em -190.2em;
   width: 1.4em;
   height: 1.1em; }
 
-.icon.searchForm__buttonFind-iconEnter:before, .icon.anyDevice__buttonStart-iconEnter:before, .icon.cooperation__buttonStart-iconEnter:before, .icon.articles__buttonMore-iconEnter:before, .icon.communication__form-buttonSend-iconEnter:before {
-  background-position: -0.2em -151.2em;
+.icon.searchForm__buttonFind-iconEnter:before, .icon.complex__buttonStart-iconEnter:before, .icon.anyDevice__buttonStart-iconEnter:before, .icon.cooperation__buttonStart-iconEnter:before, .icon.articles__buttonMore-iconEnter:before, .icon.communication__form-buttonSend-iconEnter:before {
+  background-position: -0.2em -191.7em;
   width: 0.7em;
   height: 1.1em; }
 
 .icon.searchForm__inputCityDeparture-iconArrow:before, .icon.searchForm__inputDate-iconArrow:before {
-  background-position: -0.2em -152.7em;
+  background-position: -0.2em -193.2em;
   width: 2.2em;
   height: 1.5em; }
 
 .icon.searchForm__inputCityDeparture-iconReset:before, .icon.searchForm__inputCityArrive-iconReset:before {
-  background-position: -0.2em -154.6em;
+  background-position: -0.2em -195.1em;
   width: 1em;
   height: 1em; }
 
 .icon.searchForm__inputDate-iconCalendar:before {
-  background-position: -0.2em -156em;
+  background-position: -0.2em -196.5em;
   width: 1.6em;
   height: 1.6em; }
 
 .icon.searchForm__inputQuantity-iconDown:before {
-  background-position: -0.2em -158em;
+  background-position: -0.2em -198.5em;
   width: 1.4em;
   height: 0.8em; }
 
 .icon.searchForm__inputQuantity-iconPerson:before {
-  background-position: -0.2em -159.2em;
+  background-position: -0.2em -199.7em;
   width: 0.8em;
   height: 1.8em; }
 
@@ -993,6 +1087,10 @@ body {
     margin-right: 106px; }
   .greeting__header-menu {
     margin-right: 40px; }
+  .complex__item {
+    width: 275px; }
+  .complex__item-text {
+    font-size: 0.88rem; }
   .steps__itemsLine {
     width: 880px; }
   .eventually__banner {
@@ -1025,7 +1123,7 @@ body {
   .searchForm__inputQuantity {
     -webkit-border-radius: 0 5px 5px 0;
             border-radius: 0 5px 5px 0; }
-  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
+  .searchForm__buttonFind, .complex__buttonStart, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
     margin-top: 32px;
     -webkit-border-radius: 5px;
             border-radius: 5px;
@@ -1035,6 +1133,12 @@ body {
     margin: 0 23px; }
   .benefits__item-text {
     font-size: 0.85rem; }
+  .complex__item {
+    width: 225px;
+    height: 365px;
+    padding: 0 10px; }
+  .complex__item-text {
+    font-size: 0.75rem; }
   .steps__itemsLine {
     width: 700px; }
   .steps__item-text {
@@ -1161,7 +1265,7 @@ body {
   .searchForm__inputQuantity-inputNumber {
     width: -webkit-calc(100% - 22px);
     width: calc(100% - 22px); }
-  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
+  .searchForm__buttonFind, .complex__buttonStart, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
     margin-top: 30px;
     width: 275px;
     height: 50px;
@@ -1171,11 +1275,11 @@ body {
             box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
     padding: 0;
     vertical-align: middle; }
-  .searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text, .communication__form-buttonSend-text {
+  .searchForm__buttonFind-text, .complex__buttonStart-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text, .communication__form-buttonSend-text {
     margin-right: 0; }
-  .searchForm__buttonFind-text.visible-sm, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text, .visible-sm.articles__buttonMore-text, .visible-sm.communication__form-buttonSend-text {
+  .searchForm__buttonFind-text.visible-sm, .visible-sm.complex__buttonStart-text, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text, .visible-sm.articles__buttonMore-text, .visible-sm.communication__form-buttonSend-text {
     display: inline !important; }
-  .searchForm__buttonFind-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter, .communication__form-buttonSend-iconEnter {
+  .searchForm__buttonFind-iconEnter, .complex__buttonStart-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter, .communication__form-buttonSend-iconEnter {
     float: inherit !important;
     margin-top: 0 !important;
     margin-left: 27px;
@@ -1213,6 +1317,24 @@ body {
       font-size: 8px; }
   .benefits__item-text {
     margin-top: 22px; }
+  .complex {
+    padding-top: 79px;
+    text-align: center; }
+  .complex__heading {
+    font-size: 2.058rem;
+    margin-bottom: 23px; }
+  .complex__text {
+    margin-bottom: 77px; }
+  .complex__itemsWrap {
+    display: inline-block; }
+  .complex__item {
+    margin-bottom: 64px;
+    display: inline-block;
+    float: left; }
+    .complex__item:nth-child(1) {
+      margin-right: 23px; }
+    .complex__item:nth-child(3) {
+      margin-right: 23px; }
   .steps {
     padding-top: 86px;
     padding-bottom: 89px; }
@@ -1504,7 +1626,7 @@ body {
   .searchForm__inputQuantity-inputNumber {
     width: -webkit-calc(100% - 22px);
     width: calc(100% - 22px); }
-  .searchForm__buttonFind, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
+  .searchForm__buttonFind, .complex__buttonStart, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
     margin-top: 9px;
     width: 283px;
     height: 50px;
@@ -1514,11 +1636,11 @@ body {
             box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
     padding: 0;
     vertical-align: middle; }
-  .searchForm__buttonFind-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text, .communication__form-buttonSend-text {
+  .searchForm__buttonFind-text, .complex__buttonStart-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text, .communication__form-buttonSend-text {
     margin-right: 0; }
-  .searchForm__buttonFind-text.visible-sm, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text, .visible-sm.articles__buttonMore-text, .visible-sm.communication__form-buttonSend-text {
+  .searchForm__buttonFind-text.visible-sm, .visible-sm.complex__buttonStart-text, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text, .visible-sm.articles__buttonMore-text, .visible-sm.communication__form-buttonSend-text {
     display: inline !important; }
-  .searchForm__buttonFind-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter, .communication__form-buttonSend-iconEnter {
+  .searchForm__buttonFind-iconEnter, .complex__buttonStart-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter, .communication__form-buttonSend-iconEnter {
     float: inherit !important;
     margin-top: 0 !important;
     margin-left: 27px;

@@ -1,0 +1,71 @@
+.complex
+  padding-top: 110px
+  padding-bottom: 115px
+  background: linear-gradient(0deg, #81b2da 0%, #bddcf4 100%)
+  text-align: center
+
+.complex__heading
+  font-size: 2.25rem
+  color: $grey8
+  margin-bottom: 26px
+
+.complex__text
+  font-size: 1.063rem
+  font-weight: 300
+  color: $grey8
+  margin-bottom: 36px + 34px
+  line-height: 25px
+
+.complex__itemsWrap
+  display: flex
+  justify-content: space-between
+
+.complex__item
+  border-radius: 5px
+  background-color: $white
+  box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.21)
+  width: 293px
+  height: 380px
+  padding: 0 17px
+
+  .icon
+    position: relative
+    top: -34px
+
+    &::before
+      margin-bottom: -6px
+
+.complex__item-heading
+  font-size: 1rem
+  font-weight: 900
+  color: $grey8
+  text-transform: uppercase
+  margin-bottom: 24px
+
+.complex__item-text
+  font-size: 0.938rem
+  font-weight: 300
+  color: $grey9
+  line-height: 27px
+
+.complex__item-text_strong
+  font-weight: 900
+
+.complex__buttonStart
+  @extend .searchForm__buttonFind
+  display: inline-block
+  margin-top: 64px
+  border-radius: 3px
+  padding: 17px 23px 17px 39px
+
+  &:hover
+    text-decoration: none
+  &:focus
+    text-decoration: none
+
+.complex__buttonStart-text
+  @extend .searchForm__buttonFind-text
+  margin-right: 20px
+
+.complex__buttonStart-iconEnter
+  @extend .searchForm__buttonFind-iconEnter
