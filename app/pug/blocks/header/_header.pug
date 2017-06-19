@@ -33,7 +33,7 @@
       // /.navbar-collapse
     // /.container
   // /.greeting__header
-  .container
+  .container(id='greeting')
     .greeting__presentation
       p.greeting__presentationText Берем всю организацию на себя
       h1.greeting__presentationHeading Командировка
@@ -42,17 +42,17 @@
       h5.greeting__formHeading
         | Поиск лучшего варианта
         span.hidden-xs вашей деловой
-        | поездки:
+        |  поездки:
       include __header__searchForm
     // /.greeting__form
     .greeting__socials.visible-lg.visible-md
-      .wrapper
+      a.wrapper(href='https://twitter.com/' title='https://twitter.com/' target='_blank')
         span.icon.greeting__socials-iconTwitter
-      .wrapper
+      a.wrapper(href='https://www.instagram.com/' title='https://www.instagram.com/' target='_blank')
         span.icon.greeting__socials-iconInstagram
-      .wrapper
+      a.wrapper(href='https://ru-ru.facebook.com/' title='https://ru-ru.facebook.com/' target='_blank')
         span.icon.greeting__socials-iconFacebook
-      .wrapper
+      a.wrapper(href='https://plus.google.com/' title='https://plus.google.com/' target='_blank')
         span.icon.greeting__socials-iconGooglePlus
     // /.greeting__socials
     include __header__services

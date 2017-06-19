@@ -28,6 +28,9 @@
 
   &:hover
     background: none
+  &:focus
+    background: none
+    color: inherit
 
 
 .greeting__header-menuItem-link
@@ -39,7 +42,6 @@
   display: inline-block
   float: left
   margin-top: 29px
-  //margin-right: 23px
 
 .greeting__header-infoIconPhone
   margin-right: 9px
@@ -66,7 +68,6 @@
   display: inline-block
   float: right
   border-left: 1px solid $darkWhite
-  //border-right: 1px solid $darkWhite
   padding: 28px 13px 28px 25px
 
 .greeting__header-entranceIconLogin
@@ -86,7 +87,6 @@
   outline: none
   background: none
   padding: 0
-  //vertical-align: middle
 
 .greeting__header-entranceButton
   @extend %btn-default
