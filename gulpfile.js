@@ -99,9 +99,15 @@ gulp.task('clean', function() {
   return del.sync('./dist');
 });
 
+// Favicon
+gulp.task('img-favicon', function() {
+  return gulp.src('./app/favicon.ico')
+    .pipe(gulp.dest('./dist'));
+});
+
 // Img min
-gulp.task('img', function() {
-  return gulp.src('./app/img/**/*')
+gulp.task('img', ['img-favicon'], function() {
+  return gulp.src('./app/img/*.+(jpg|png|svg)')
     /*.pipe(cache(imagemin({
       interlaced: true,
       progressive: true,

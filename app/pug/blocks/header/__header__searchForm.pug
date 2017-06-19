@@ -16,15 +16,15 @@ form.searchForm
   br.visible-sm.visible-xs
   .searchForm__inputDate
     .wrap_there
-      label.searchForm__inputDate-text Туда
+      label.searchForm__inputDate-text(for='there') Туда
       br
-      input.searchForm__inputDate-inputDay(type='text', placeholder='06/03/17', required)
+      input.searchForm__inputDate-inputDay(type='date', value='2017-03-06', id='there', required)
       span.icon.searchForm__inputDate-iconArrow
     // /.wrap_there
     .wrap_back
-      label.searchForm__inputDate-text Обратно
+      label.searchForm__inputDate-text(for='back') Обратно
       br
-      input.searchForm__inputDate-inputDay(type='text', placeholder='14/03/17', required)
+      input.searchForm__inputDate-inputDay(type='date', value='2017-03-14', id='back', required)
       span.icon.searchForm__inputDate-iconCalendar
     // /.wrap_back
   // /.searchForm__inputDate
