@@ -7,7 +7,7 @@
   float: left
   background: $white
   border-radius: 5px 0 0 5px
-  padding: 10px 18px 14px 16px
+  padding: 10px 18px 13px 16px
 
 .searchForm__inputCityDeparture-text
   font-size: 0.813rem
@@ -17,7 +17,7 @@
 
 .searchForm__inputCityDeparture-inputText
   width: 158px
-  height: 13px
+  height: 17px
   font-size: 1rem
   color: $black
   border: none
@@ -34,6 +34,9 @@
   &:-ms-input-placeholder
     color: $grey9
 
+.searchForm__inputCityDeparture-buttonReset
+  @extend %btn-default
+
 .searchForm__inputCityDeparture-iconArrow
   float: right
 
@@ -49,6 +52,9 @@
 .searchForm__inputCityArrive-inputText
   @extend .searchForm__inputCityDeparture-inputText
   width: 207px
+
+.searchForm__inputCityArrive-buttonReset
+  @extend .searchForm__inputCityDeparture-buttonReset
 
 .searchForm__inputCityArrive-iconReset
   @extend .searchForm__inputCityDeparture-iconReset
@@ -84,22 +90,37 @@
 .searchForm__inputQuantity
   @extend .searchForm__inputCityArrive
   padding-right: 10px
-  padding-bottom: 9px
+  padding-bottom: 5px
 
 .searchForm__inputQuantity-text
   @extend .searchForm__inputCityDeparture-text
 
 .searchForm__inputQuantity-iconPerson
-  position: relative
-  top: -2px
   margin-right: 3px
+  float: left
+  margin-bottom: 3px
 
 .searchForm__inputQuantity-inputNumber
-  width: 151px
+  width: 175px
   font-size: 0.938rem
   color: $grey9
   border: none
   outline: none
+
+.chosen-container
+  font-size: inherit
+
+.chosen-single
+  top: -3px
+  border: none !important
+  box-shadow: none !important
+  background: transparent !important
+
+.chosen-container-single .chosen-single div b
+  background: url(../img/searchForm__inputQuantity-iconDown.svg) no-repeat  0 9px
+
+.chosen-drop
+  border-top: 1px solid #aaa !important
 
 .searchForm__buttonFind
   @extend %btn-default

@@ -53,7 +53,11 @@ gulp.task('browser-sync', function() {
 gulp.task('scripts', function() {
   return gulp.src([
     './app/libs/jquery/dist/jquery.min.js',
-    './app/libs/bootstrap/dist/js/bootstrap.min.js'
+    './app/libs/bootstrap/dist/js/bootstrap.min.js',
+    './app/libs/jquery-ui/jquery-ui.min.js',
+    './app/libs/jquery-ui/ui/i18n/datepicker-ru.js',
+    './app/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js',
+    './app/libs/chosen/chosen.jquery.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -68,11 +72,16 @@ gulp.task('css-libs', ['sass'], function() {
     .pipe(gulp.dest('./app/css'));
 });
 
+// Icons for jQuery UI
+gulp.task('icons-jQueryUi', function() {
+  return gulp.src('./app/libs/jquery-ui/themes/base/images/**/*')
+    .pipe(gulp.dest('./app/css/images'));
+});
+
 // Watch
-gulp.task('watch', ['browser-sync', 'pug', 'css-libs', 'scripts'], function() {
+gulp.task('watch', ['browser-sync', 'pug', 'css-libs', 'icons-jQueryUi', 'scripts'], function() {
   gulp.watch('./app/pug/**/*.pug', ['pug']);
   gulp.watch('./app/sass/**/*.sass', ['sass']);
-  //gulp.watch('./app/*.html').on('change', browserSync.reload);
   gulp.watch('./app/js/**/*.js', browserSync.reload);
 });
 
@@ -99,14 +108,8 @@ gulp.task('clean', function() {
   return del.sync('./dist');
 });
 
-// Favicon
-gulp.task('img-favicon', function() {
-  return gulp.src('./app/favicon.ico')
-    .pipe(gulp.dest('./dist'));
-});
-
 // Img min
-gulp.task('img', ['img-favicon'], function() {
+gulp.task('img', function() {
   return gulp.src('./app/img/*.+(jpg|png|svg)')
     /*.pipe(cache(imagemin({
       interlaced: true,
@@ -123,16 +126,22 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
       './app/css/main.css',
       './app/css/libs.min.css'
       ])
-  .pipe(gulp.dest('./dist/css'));
+    .pipe(gulp.dest('./dist/css'));
 
   var buildFonts = gulp.src('./app/fonts/**/*')
-  .pipe(gulp.dest('./dist/fonts'));
+    .pipe(gulp.dest('./dist/fonts'));
 
   var buildJs = gulp.src('./app/js/**/*')
-  .pipe(gulp.dest('./dist/js'));
+    .pipe(gulp.dest('./dist/js'));
 
   var buildHtml = gulp.src('./app/*.html')
-  .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist'));
+
+  var favicon = gulp.src('./app/favicon.ico')
+    .pipe(gulp.dest('./dist'));
+
+  var iconsForJQueryUi = gulp.src('./app/css/images/**/*')
+    .pipe(gulp.dest('./dist/css/images'));
 });
 
 // Clear cache

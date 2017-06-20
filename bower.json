@@ -1,6 +1,6 @@
 {
   "name": "gan",
-  "main": "index.js",
+  "main": "main.js",
   "authors": [
     "Mike Ivonin <Michael@drummer.ru>"
   ],

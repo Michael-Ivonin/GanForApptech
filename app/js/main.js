@@ -5,12 +5,37 @@
 'use strict';
 
 $(document).ready(function() {
-  // Hide or show main heading
-  /*$('.navbar-toggle').click(function() {
-    if ($('.greeting__presentation').is(':visible')) {
-      $('.greeting__presentation').hide();
+  // Datepicker
+  $('#there, #back').datepicker();
+
+  // Input text
+  $('.searchForm__inputCityDeparture-inputText, .searchForm__inputCityArrive-inputText').focus(function() {
+    $(this).attr('placeholder','');
+  });
+
+  $('.searchForm__inputCityDeparture-inputText').focusout(function(){
+    $(this).attr('placeholder','Омск');
+  });
+
+  $('.searchForm__inputCityArrive-inputText').focusout(function(){
+    $(this).attr('placeholder','Москва');
+  });
+
+  $('.searchForm__inputCityDeparture-buttonReset').click(function() {
+    $('.searchForm__inputCityDeparture-inputText').val('');
+  });
+
+  $('.searchForm__inputCityArrive-buttonReset').click(function() {
+    if ($(window).width() >= 751 ) {
+      $('.searchForm__inputCityDeparture-inputText, .searchForm__inputCityArrive-inputText').val('');
     } else {
-      $('.greeting__presentation').show();
+      $('.searchForm__inputCityArrive-inputText').val('');
     }
-  });*/
+  });
+
+  // Mask for calendar
+  $('.searchForm__inputDate-inputDay').mask("99.99.9999");
+
+  // Chosen for select
+  $('.searchForm__inputQuantity-inputNumber').chosen();
 });

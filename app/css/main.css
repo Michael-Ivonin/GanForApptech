@@ -115,7 +115,7 @@ body {
     position: relative;
     top: -2px; }
 
-.greeting__header-entranceButton, .searchForm__buttonFind, .complex__buttonStart, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
+.greeting__header-entranceButton, .searchForm__inputCityDeparture-buttonReset, .searchForm__inputCityArrive-buttonReset, .searchForm__buttonFind, .complex__buttonStart, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
   border: none;
   outline: none;
   background: none;
@@ -172,7 +172,7 @@ body {
   background: white;
   -webkit-border-radius: 5px 0 0 5px;
           border-radius: 5px 0 0 5px;
-  padding: 10px 18px 14px 16px; }
+  padding: 10px 18px 13px 16px; }
 
 .searchForm__inputCityDeparture-text, .searchForm__inputCityArrive-text, .searchForm__inputDate-text, .searchForm__inputQuantity-text {
   font-size: 0.813rem;
@@ -182,7 +182,7 @@ body {
 
 .searchForm__inputCityDeparture-inputText, .searchForm__inputCityArrive-inputText, .searchForm__inputDate-inputDay {
   width: 158px;
-  height: 13px;
+  height: 17px;
   font-size: 1rem;
   color: black;
   border: none;
@@ -232,19 +232,35 @@ body {
 
 .searchForm__inputQuantity {
   padding-right: 10px;
-  padding-bottom: 9px; }
+  padding-bottom: 5px; }
 
 .searchForm__inputQuantity-iconPerson {
-  position: relative;
-  top: -2px;
-  margin-right: 3px; }
+  margin-right: 3px;
+  float: left;
+  margin-bottom: 3px; }
 
 .searchForm__inputQuantity-inputNumber {
-  width: 151px;
+  width: 175px;
   font-size: 0.938rem;
   color: #2c2c2c;
   border: none;
   outline: none; }
+
+.chosen-container {
+  font-size: inherit; }
+
+.chosen-single {
+  top: -3px;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background: transparent !important; }
+
+.chosen-container-single .chosen-single div b {
+  background: url(../img/searchForm__inputQuantity-iconDown.svg) no-repeat 0 9px; }
+
+.chosen-drop {
+  border-top: 1px solid #aaa !important; }
 
 .searchForm__buttonFind, .complex__buttonStart, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
   background: #ffc816;
@@ -630,12 +646,6 @@ body {
   padding-top: 222px;
   padding-bottom: 279px;
   position: relative; }
-
-.smartphone-bg {
-  background: url(../img/smartphone.svg) no-repeat 279px 135px;
-  position: absolute;
-  width: 100%;
-  height: 430px; }
 
 .anyDevice__heading {
   font-size: 3.188rem;
@@ -1260,15 +1270,13 @@ body {
     width: 50%;
     padding-left: 25px;
     padding-right: 12px; }
-  .searchForm__inputCityArrive-iconReset {
-    float: right;
-    top: inherit;
-    bottom: -3px; }
+  .searchForm__inputCityArrive-buttonReset {
+    float: right; }
   .searchForm__inputDate {
     -webkit-border-radius: 0 0 0 5px;
             border-radius: 0 0 0 5px;
     width: 50%;
-    padding: 10px 16px 14px; }
+    padding: 10px 16px 13px; }
     .searchForm__inputDate .wrap_there, .searchForm__inputDate .wrap_back {
       width: 50%; }
     .searchForm__inputDate .searchForm__inputDate-iconArrow {
@@ -1283,8 +1291,8 @@ body {
     width: calc(50% - 2px);
     padding-right: 0; }
   .searchForm__inputQuantity-inputNumber {
-    width: -webkit-calc(100% - 22px);
-    width: calc(100% - 22px); }
+    width: -webkit-calc(100% - 18px);
+    width: calc(100% - 18px); }
   .searchForm__buttonFind, .complex__buttonStart, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
     margin-top: 30px;
     width: 275px;
@@ -1642,14 +1650,11 @@ body {
     margin-bottom: 2px;
     -webkit-box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15);
             box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15); }
-  .searchForm__inputCityDeparture-iconReset, .searchForm__inputCityArrive-iconReset {
-    float: right;
-    margin-top: 3px; }
+  .searchForm__inputCityDeparture-buttonReset, .searchForm__inputCityArrive-buttonReset {
+    float: right; }
   .searchForm__inputCityArrive, .searchForm__inputDate, .searchForm__inputQuantity {
     -webkit-border-radius: 0;
             border-radius: 0; }
-  .searchForm__inputCityArrive-iconReset {
-    margin-top: 5px; }
   .searchForm__inputDate {
     padding-right: 8px; }
   .wrap_there, .wrap_back {
@@ -1664,8 +1669,8 @@ body {
     padding-right: 0;
     padding-bottom: 10px; }
   .searchForm__inputQuantity-inputNumber {
-    width: -webkit-calc(100% - 22px);
-    width: calc(100% - 22px); }
+    width: -webkit-calc(100% - 17px);
+    width: calc(100% - 17px); }
   .searchForm__buttonFind, .complex__buttonStart, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
     margin-top: 9px;
     width: 283px;
