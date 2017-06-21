@@ -6,6 +6,8 @@
 
 $(document).ready(function() {
   // Datepicker
+  $('.searchForm__inputDate-inputDay:eq(2), .searchForm__inputDate-inputDay:eq(3)').removeAttr('id');
+
   $('.searchForm__inputDate-inputDay').each(function() {
     $(this).datepicker();
   });

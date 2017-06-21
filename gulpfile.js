@@ -78,8 +78,14 @@ gulp.task('icons-jQueryUi', function() {
     .pipe(gulp.dest('./app/css/images'));
 });
 
+// Icons for Chosen
+gulp.task('icons-Chosen', function() {
+  return gulp.src('./app/libs/chosen/chosen-sprite.png')
+    .pipe(gulp.dest('./app/css'));
+});
+
 // Watch
-gulp.task('watch', ['browser-sync', 'pug', 'css-libs', 'icons-jQueryUi', 'scripts'], function() {
+gulp.task('watch', ['browser-sync', 'pug', 'css-libs', 'icons-jQueryUi', 'icons-Chosen', 'scripts'], function() {
   gulp.watch('./app/pug/**/*.pug', ['pug']);
   gulp.watch('./app/sass/**/*.sass', ['sass']);
   gulp.watch('./app/js/**/*.js', browserSync.reload);
@@ -124,7 +130,8 @@ gulp.task('img', function() {
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
   var buildCss = gulp.src([
       './app/css/main.css',
-      './app/css/libs.min.css'
+      './app/css/libs.min.css',
+      './app/css/chosen-sprite.png'
       ])
     .pipe(gulp.dest('./dist/css'));
 

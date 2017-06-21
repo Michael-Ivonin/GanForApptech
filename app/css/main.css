@@ -464,7 +464,9 @@ body {
           border-radius: 3px;
   padding: 17px 23px 17px 39px;
   -webkit-box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1); }
+          box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
+  float: none !important;
+  clear: initial !important; }
   .complex__buttonStart:hover, .anyDevice__buttonStart:hover, .cooperation__buttonStart:hover, .articles__buttonMore:hover {
     text-decoration: none; }
   .complex__buttonStart:focus, .anyDevice__buttonStart:focus, .cooperation__buttonStart:focus, .articles__buttonMore:focus {
@@ -472,6 +474,9 @@ body {
 
 .complex__buttonStart-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text {
   margin-right: 20px; }
+
+.complex__buttonStart-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter {
+  margin-right: 0 !important; }
 
 .steps {
   padding-top: 117px;
@@ -668,8 +673,8 @@ body {
 
 .anyDevice__buttonStart {
   padding: 17px 29px 17px 39px;
-  float: right;
-  clear: both;
+  float: right !important;
+  clear: both !important;
   margin-right: 274px;
   margin-top: 0; }
 
@@ -1650,14 +1655,17 @@ body {
             border-radius: 5px 5px 0 0;
     margin-bottom: 2px;
     -webkit-box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15);
-            box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15); }
+            box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15);
+    clear: both; }
   .searchForm__inputCityDeparture-buttonReset, .searchForm__inputCityArrive-buttonReset {
     float: right; }
   .searchForm__inputCityArrive, .searchForm__inputDate, .searchForm__inputQuantity {
     -webkit-border-radius: 0;
-            border-radius: 0; }
+            border-radius: 0;
+    clear: both; }
   .searchForm__inputDate {
-    padding-right: 8px; }
+    padding-right: 8px;
+    clear: both; }
   .wrap_there, .wrap_back {
     width: 50%; }
   .searchForm__inputDate-iconArrow {
@@ -1668,7 +1676,8 @@ body {
     -webkit-border-radius: 0 0 5px 5px;
             border-radius: 0 0 5px 5px;
     padding-right: 0;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    clear: both; }
   .searchForm__inputQuantity-inputNumber {
     width: -webkit-calc(100% - 17px);
     width: calc(100% - 17px); }
@@ -1681,17 +1690,15 @@ body {
     -webkit-box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
     padding: 0;
-    vertical-align: middle; }
+    vertical-align: middle;
+    float: left;
+    clear: both; }
   .searchForm__buttonFind-text, .complex__buttonStart-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text, .communication__form-buttonSend-text {
     margin-right: 0; }
   .searchForm__buttonFind-text.visible-sm, .visible-sm.complex__buttonStart-text, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text, .visible-sm.articles__buttonMore-text, .visible-sm.communication__form-buttonSend-text {
     display: inline !important; }
   .searchForm__buttonFind-iconEnter, .complex__buttonStart-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter, .communication__form-buttonSend-iconEnter {
-    float: inherit !important;
-    margin-top: 0 !important;
-    margin-left: 27px;
-    position: relative;
-    top: -2px; }
+    margin-right: 15px; }
   .services {
     display: block;
     margin: 21px auto 41px;
@@ -1876,10 +1883,9 @@ body {
     padding: 17px 13px 17px 23px;
     margin-top: 0;
     width: 287px;
-    float: none; }
+    float: none !important; }
   .anyDevice__buttonStart-iconEnter {
-    margin-left: 17px;
-    margin-top: 5px !important; }
+    margin-left: 17px; }
   .cooperation {
     padding-top: 64px;
     padding-bottom: 66px; }
@@ -1971,7 +1977,8 @@ body {
           -ms-flex-order: 3;
               order: 3; }
   .communication__form {
-    padding: 27px 9px 36px 9px; }
+    padding: 27px 9px 36px 9px;
+    float: left; }
   .communication__form-text {
     font-size: 0.875rem;
     line-height: 17px;
