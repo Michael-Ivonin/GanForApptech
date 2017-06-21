@@ -6,7 +6,9 @@
 
 $(document).ready(function() {
   // Datepicker
-  $('#there, #back').datepicker();
+  $('.searchForm__inputDate-inputDay').each(function() {
+    $(this).datepicker();
+  });
 
   // Input text
   $('.searchForm__inputCityDeparture-inputText, .searchForm__inputCityArrive-inputText').focus(function() {
@@ -38,4 +40,18 @@ $(document).ready(function() {
 
   // Chosen for select
   $('.searchForm__inputQuantity-inputNumber').chosen();
+
+  $(window).resize(function() {
+    if ($(window).width() <= 974 ) {
+      $('.chosen-container').each(function() {
+        $(this).attr('style', 'width: 94%');
+      });
+    }
+
+    if ($(window).width() >= 975 ) {
+      $('.chosen-container').each(function() {
+        $(this).attr('style', 'width: 94%');
+      });
+    }
+  });
 });

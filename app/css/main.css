@@ -232,7 +232,8 @@ body {
 
 .searchForm__inputQuantity {
   padding-right: 10px;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  width: 207px; }
 
 .searchForm__inputQuantity-iconPerson {
   margin-right: 3px;
@@ -274,7 +275,8 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   margin-right: 17px;
-  letter-spacing: 1.32px; }
+  letter-spacing: 1.32px;
+  line-height: 15px; }
 
 .icon.searchForm__buttonFind-iconEnter, .icon.complex__buttonStart-iconEnter, .icon.anyDevice__buttonStart-iconEnter, .icon.cooperation__buttonStart-iconEnter, .icon.articles__buttonMore-iconEnter, .icon.communication__form-buttonSend-iconEnter {
   float: right;
@@ -396,10 +398,10 @@ body {
 .complex {
   padding-top: 110px;
   padding-bottom: 115px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#81b2da), to(#bddcf4));
-  background: -webkit-linear-gradient(bottom, #81b2da 0%, #bddcf4 100%);
-  background: -o-linear-gradient(bottom, #81b2da 0%, #bddcf4 100%);
-  background: linear-gradient(0deg, #81b2da 0%, #bddcf4 100%);
+  background: url(../img/complex-bgAir.png) no-repeat center 0, url(../img/complex-bgBuildings.png) repeat-x center bottom, -webkit-gradient(linear, left bottom, left top, from(#81b2da), to(#bddcf4));
+  background: url(../img/complex-bgAir.png) no-repeat center 0, url(../img/complex-bgBuildings.png) repeat-x center bottom, -webkit-linear-gradient(bottom, #81b2da 0%, #bddcf4 100%);
+  background: url(../img/complex-bgAir.png) no-repeat center 0, url(../img/complex-bgBuildings.png) repeat-x center bottom, -o-linear-gradient(bottom, #81b2da 0%, #bddcf4 100%);
+  background: url(../img/complex-bgAir.png) no-repeat center 0, url(../img/complex-bgBuildings.png) repeat-x center bottom, linear-gradient(0deg, #81b2da 0%, #bddcf4 100%);
   text-align: center; }
 
 .complex__heading {
@@ -615,10 +617,10 @@ body {
   padding-bottom: 90px;
   text-align: center;
   position: relative;
-  background: url(../img/clouds.svg) no-repeat 842px 32px, url(../img/aeroplane.svg) no-repeat 224px 75px, url(../img/line.svg) no-repeat 224px 75px, -webkit-gradient(linear, left bottom, left top, from(#1e669c), to(#2976b0));
-  background: url(../img/clouds.svg) no-repeat 842px 32px, url(../img/aeroplane.svg) no-repeat 224px 75px, url(../img/line.svg) no-repeat 224px 75px, -webkit-linear-gradient(bottom, #1e669c 0%, #2976b0 100%);
-  background: url(../img/clouds.svg) no-repeat 842px 32px, url(../img/aeroplane.svg) no-repeat 224px 75px, url(../img/line.svg) no-repeat 224px 75px, -o-linear-gradient(bottom, #1e669c 0%, #2976b0 100%);
-  background: url(../img/clouds.svg) no-repeat 842px 32px, url(../img/aeroplane.svg) no-repeat 224px 75px, url(../img/line.svg) no-repeat 224px 75px, linear-gradient(0deg, #1e669c 0%, #2976b0 100%); }
+  background: url(../img/formalization-bgAir.png) no-repeat center, -webkit-gradient(linear, left bottom, left top, from(#1e669c), to(#2976b0));
+  background: url(../img/formalization-bgAir.png) no-repeat center, -webkit-linear-gradient(bottom, #1e669c 0%, #2976b0 100%);
+  background: url(../img/formalization-bgAir.png) no-repeat center, -o-linear-gradient(bottom, #1e669c 0%, #2976b0 100%);
+  background: url(../img/formalization-bgAir.png) no-repeat center, linear-gradient(0deg, #1e669c 0%, #2976b0 100%); }
 
 .formalization__heading {
   font-size: 2.25rem;
@@ -639,13 +641,12 @@ body {
   text-align: initial; }
 
 .anyDevice {
-  background: url(../img/anyDevice-bg.jpg);
+  background: url(../img/anyDevice-bg2.jpg);
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center;
   padding-top: 222px;
-  padding-bottom: 279px;
-  position: relative; }
+  padding-bottom: 279px; }
 
 .anyDevice__heading {
   font-size: 3.188rem;
