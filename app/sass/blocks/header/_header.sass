@@ -88,11 +88,21 @@
   background: none
   padding: 0
 
+%btn-animation
+  &:active
+    position: relative
+    top: 2px
+
+
 .greeting__header-entranceButton
   @extend %btn-default
+  @extend %btn-animation
   font-size: 1rem
   color: $grey9
   margin-top: 7px
+
+  &:hover
+    color: $hoverBlue
 
 .greeting__header-entranceButton-iconEnter
   margin-left: 4px
@@ -147,6 +157,9 @@
     border: 1px solid $white
     border-radius: 100%
     margin-bottom: 12px
+
+    &:hover
+      border: 1px solid $orange
 
 // Include _header__services.sass
 @import '__header__services'

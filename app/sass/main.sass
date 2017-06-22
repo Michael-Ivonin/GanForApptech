@@ -59,12 +59,19 @@ $orange2: rgb(244, 150, 50)
 $yellow: rgb(255, 200, 22)
 $blue: rgb(129, 179, 220)
 $lightBlue: rgb(221, 239, 253)
+$hoverBlue: #23527c
 
 
 
 // Page
 body
   font-family: 'Roboto', sans-serif
+
+  * a
+    &:hover
+      text-decoration: none
+    &:focus
+      text-decoration: none
 
 // Include _header.sass
 @import 'blocks/header/header'

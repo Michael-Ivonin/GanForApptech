@@ -24,15 +24,15 @@
   outline: none
 
   &::-webkit-input-placeholder
-    color: $grey9
+    color: $grey6
   &::-moz-placeholder
-    color: $grey9
+    color: $grey6
 
   &:-moz-placeholder
-    color: $grey9
+    color: $grey6
 
   &:-ms-input-placeholder
-    color: $grey9
+    color: $grey6
 
 .searchForm__inputCityDeparture-buttonReset
   @extend %btn-default
@@ -125,9 +125,13 @@
 
 .searchForm__buttonFind
   @extend %btn-default
+  @extend %btn-animation
   background: $yellow
   border-radius: 0 5px 5px 0
   padding: 25px 27px 25px 38px
+
+  &:hover
+    background: $orange2
 
 .searchForm__buttonFind-text
   font-size: 0.813rem

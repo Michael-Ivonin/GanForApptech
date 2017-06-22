@@ -80,7 +80,7 @@ gulp.task('icons-jQueryUi', function() {
 
 // Icons for Chosen
 gulp.task('icons-Chosen', function() {
-  return gulp.src('./app/libs/chosen/chosen-sprite.png')
+  return gulp.src('./app/libs/chosen/*.png')
     .pipe(gulp.dest('./app/css'));
 });
 
@@ -131,7 +131,7 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
   var buildCss = gulp.src([
       './app/css/main.css',
       './app/css/libs.min.css',
-      './app/css/chosen-sprite.png'
+      './app/css/*.png'
       ])
     .pipe(gulp.dest('./dist/css'));
 

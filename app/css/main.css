@@ -30,6 +30,10 @@
 
 body {
   font-family: 'Roboto', sans-serif; }
+  body * a:hover {
+    text-decoration: none; }
+  body * a:focus {
+    text-decoration: none; }
 
 .greeting {
   background: url(../img/greeting-bg.jpg) no-repeat;
@@ -121,10 +125,16 @@ body {
   background: none;
   padding: 0; }
 
+.greeting__header-entranceButton:active, .searchForm__buttonFind:active, .complex__buttonStart:active, .anyDevice__buttonStart:active, .cooperation__buttonStart:active, .articles__buttonMore:active, .communication__form-buttonSend:active {
+  position: relative;
+  top: 2px; }
+
 .greeting__header-entranceButton {
   font-size: 1rem;
   color: #2c2c2c;
   margin-top: 7px; }
+  .greeting__header-entranceButton:hover {
+    color: #23527c; }
 
 .greeting__header-entranceButton-iconEnter {
   margin-left: 4px;
@@ -188,13 +198,13 @@ body {
   border: none;
   outline: none; }
   .searchForm__inputCityDeparture-inputText::-webkit-input-placeholder, .searchForm__inputCityArrive-inputText::-webkit-input-placeholder, .searchForm__inputDate-inputDay::-webkit-input-placeholder {
-    color: #2c2c2c; }
+    color: #555555; }
   .searchForm__inputCityDeparture-inputText::-moz-placeholder, .searchForm__inputCityArrive-inputText::-moz-placeholder, .searchForm__inputDate-inputDay::-moz-placeholder {
-    color: #2c2c2c; }
+    color: #555555; }
   .searchForm__inputCityDeparture-inputText:-moz-placeholder, .searchForm__inputCityArrive-inputText:-moz-placeholder, .searchForm__inputDate-inputDay:-moz-placeholder {
-    color: #2c2c2c; }
+    color: #555555; }
   .searchForm__inputCityDeparture-inputText:-ms-input-placeholder, .searchForm__inputCityArrive-inputText:-ms-input-placeholder, .searchForm__inputDate-inputDay:-ms-input-placeholder {
-    color: #2c2c2c; }
+    color: #555555; }
 
 .searchForm__inputCityDeparture-iconArrow, .searchForm__inputDate-iconArrow {
   float: right; }
@@ -268,6 +278,8 @@ body {
   -webkit-border-radius: 0 5px 5px 0;
           border-radius: 0 5px 5px 0;
   padding: 25px 27px 25px 38px; }
+  .searchForm__buttonFind:hover, .complex__buttonStart:hover, .anyDevice__buttonStart:hover, .cooperation__buttonStart:hover, .articles__buttonMore:hover, .communication__form-buttonSend:hover {
+    background: #f49632; }
 
 .searchForm__buttonFind-text, .complex__buttonStart-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text, .communication__form-buttonSend-text {
   font-size: 0.813rem;
@@ -306,6 +318,8 @@ body {
     -webkit-border-radius: 100%;
             border-radius: 100%;
     margin-bottom: 12px; }
+    .greeting__socials .wrapper:hover {
+      border: 1px solid #ff7800; }
 
 .services {
   display: -webkit-box;
@@ -467,10 +481,6 @@ body {
           box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
   float: none !important;
   clear: initial !important; }
-  .complex__buttonStart:hover, .anyDevice__buttonStart:hover, .cooperation__buttonStart:hover, .articles__buttonMore:hover {
-    text-decoration: none; }
-  .complex__buttonStart:focus, .anyDevice__buttonStart:focus, .cooperation__buttonStart:focus, .articles__buttonMore:focus {
-    text-decoration: none; }
 
 .complex__buttonStart-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text {
   margin-right: 20px; }
@@ -757,6 +767,8 @@ body {
   font-size: 2rem;
   font-weight: 500;
   color: white; }
+  .articles__item_big-heading:hover {
+    color: #ebebeb; }
 
 .articles__item_small {
   width: 300px;
@@ -900,6 +912,8 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .footerBottom__socials .wrapper:hover {
+    opacity: 0.6; }
 
 .icon {
   font-size: 10px; }
@@ -1263,8 +1277,8 @@ body {
             box-shadow: none;
     width: 100%; }
   .searchForm__inputCityDeparture, .searchForm__inputCityArrive, .searchForm__inputDate, .searchForm__inputQuantity {
-    -webkit-box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15);
-            box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 4px 3px 5px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 4px 3px 5px 0 rgba(0, 0, 0, 0.15);
     -webkit-border-radius: 5px 0 0 0;
             border-radius: 5px 0 0 0;
     margin-bottom: 2px;
@@ -1354,7 +1368,11 @@ body {
   .complex {
     padding-top: 79px;
     padding-bottom: 107px;
-    text-align: center; }
+    text-align: center;
+    background: url(../img/complex-bgAir.png) no-repeat center 370px, url(../img/complex-bgBuildings.png) repeat-x center bottom, -webkit-gradient(linear, left bottom, left top, from(#81b2da), to(#bddcf4));
+    background: url(../img/complex-bgAir.png) no-repeat center 370px, url(../img/complex-bgBuildings.png) repeat-x center bottom, -webkit-linear-gradient(bottom, #81b2da 0%, #bddcf4 100%);
+    background: url(../img/complex-bgAir.png) no-repeat center 370px, url(../img/complex-bgBuildings.png) repeat-x center bottom, -o-linear-gradient(bottom, #81b2da 0%, #bddcf4 100%);
+    background: url(../img/complex-bgAir.png) no-repeat center 370px, url(../img/complex-bgBuildings.png) repeat-x center bottom, linear-gradient(0deg, #81b2da 0%, #bddcf4 100%); }
   .complex__heading {
     font-size: 2.058rem;
     margin-bottom: 23px; }
@@ -1743,7 +1761,11 @@ body {
     line-height: 13px; }
   .complex {
     padding-top: 44px;
-    padding-bottom: 131px; }
+    padding-bottom: 131px;
+    background: url(../img/complex-bgAir.png) no-repeat center 1200px, url(../img/complex-bgBuildings.png) repeat-x center bottom, -webkit-gradient(linear, left bottom, left top, from(#81b2da), to(#bddcf4));
+    background: url(../img/complex-bgAir.png) no-repeat center 1200px, url(../img/complex-bgBuildings.png) repeat-x center bottom, -webkit-linear-gradient(bottom, #81b2da 0%, #bddcf4 100%);
+    background: url(../img/complex-bgAir.png) no-repeat center 1200px, url(../img/complex-bgBuildings.png) repeat-x center bottom, -o-linear-gradient(bottom, #81b2da 0%, #bddcf4 100%);
+    background: url(../img/complex-bgAir.png) no-repeat center 1200px, url(../img/complex-bgBuildings.png) repeat-x center bottom, linear-gradient(0deg, #81b2da 0%, #bddcf4 100%); }
   .complex__heading {
     font-size: 1.125rem;
     font-weight: 500;

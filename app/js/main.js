@@ -15,14 +15,17 @@ $(document).ready(function() {
   // Input text
   $('.searchForm__inputCityDeparture-inputText, .searchForm__inputCityArrive-inputText').focus(function() {
     $(this).attr('placeholder','');
+    $(this).siblings('label').css('color', 'rgb(0, 0, 0)');
   });
 
   $('.searchForm__inputCityDeparture-inputText').focusout(function(){
     $(this).attr('placeholder','Омск');
+    $(this).siblings('label').css('color', 'rgb(105, 105, 105)');
   });
 
   $('.searchForm__inputCityArrive-inputText').focusout(function(){
     $(this).attr('placeholder','Москва');
+    $(this).siblings('label').css('color', 'rgb(105, 105, 105)');
   });
 
   $('.searchForm__inputCityDeparture-buttonReset').click(function() {
@@ -35,6 +38,14 @@ $(document).ready(function() {
     } else {
       $('.searchForm__inputCityArrive-inputText').val('');
     }
+  });
+
+  $('.searchForm__inputDate-inputDay').focus(function() {
+    $(this).siblings('label').css('color', 'rgb(0, 0, 0)');
+  });
+
+  $('.searchForm__inputDate-inputDay').focusout(function(){
+    $(this).siblings('label').css('color', 'rgb(105, 105, 105)');
   });
 
   // Mask for calendar
