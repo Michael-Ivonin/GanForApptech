@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../img/svg-sprite.svg");
     background-repeat: no-repeat;
-    background-size: 21.4em 201.7em;
+    background-size: 21.4em 160.5em;
 }
 
 .no-svg .icon:before {
@@ -143,80 +143,8 @@
 
 
 
-  .icon.eventually__list-mark:before {
-      background-position: -0.2em -152.6em;
-      width: 2em;
-      height: 2em;
-  }
-
-
-
-
-  .icon.footerBottom__socials-iconFacebook:before {
-      background-position: -0.2em -155em;
-      width: 0.9em;
-      height: 1.6em;
-  }
-
-
-
-
-  .icon.footerBottom__socials-iconGooglePlus:before {
-      background-position: -0.2em -157em;
-      width: 2.1em;
-      height: 1.2em;
-  }
-
-
-
-
-  .icon.footerBottom__socials-iconInstagram:before {
-      background-position: -0.2em -158.6em;
-      width: 1.6em;
-      height: 1.6em;
-  }
-
-
-
-
-  .icon.footerBottom__socials-iconTwitter:before {
-      background-position: -0.2em -160.6em;
-      width: 1.6em;
-      height: 1.3em;
-  }
-
-
-
-
-  .icon.greeting__header-entranceButton-iconEnter:before {
-      background-position: -0.2em -162.29999999999998em;
-      width: 1.3em;
-      height: 0.7em;
-  }
-
-
-
-
-  .icon.greeting__header-entranceIconLogin:before {
-      background-position: -0.2em -163.39999999999998em;
-      width: 1.3em;
-      height: 1.3em;
-  }
-
-
-
-
-  .icon.greeting__header-infoIconPhone:before {
-      background-position: -0.2em -165.1em;
-      width: 1.2em;
-      height: 1.2em;
-  }
-
-
-
-
   .icon.greeting__header-logoLink-icon:before {
-      background-position: -0.2em -166.7em;
+      background-position: -0.2em -152.6em;
       width: 21em;
       height: 5.7em;
   }
@@ -224,136 +152,10 @@
 
 
 
-  .icon.greeting__socials-iconFacebook:before {
-      background-position: -0.2em -172.79999999999998em;
-      width: 0.8em;
-      height: 1.4em;
-  }
-
-
-
-
-  .icon.greeting__socials-iconGooglePlus:before {
-      background-position: -0.2em -174.6em;
-      width: 1.7em;
-      height: 1em;
-  }
-
-
-
-
-  .icon.greeting__socials-iconInstagram:before {
-      background-position: -0.2em -176em;
-      width: 1.4em;
-      height: 1.4em;
-  }
-
-
-
-
-  .icon.greeting__socials-iconTwitter:before {
-      background-position: -0.2em -177.79999999999998em;
-      width: 1.4em;
-      height: 1.1em;
-  }
-
-
-
-
-  .icon.searchForm__buttonFind-iconEnter:before {
-      background-position: -0.2em -179.29999999999998em;
-      width: 0.7em;
-      height: 1.1em;
-  }
-
-
-
-
-  .icon.searchForm__inputCityDeparture-iconArrow:before {
-      background-position: -0.2em -180.79999999999998em;
-      width: 2.2em;
-      height: 1.5em;
-  }
-
-
-
-
-  .icon.searchForm__inputCityDeparture-iconReset:before {
-      background-position: -0.2em -182.7em;
-      width: 1em;
-      height: 1em;
-  }
-
-
-
-
   .icon.searchForm__inputDate-iconCalendar:before {
-      background-position: -0.2em -184.1em;
+      background-position: -0.2em -158.7em;
       width: 1.6em;
       height: 1.6em;
-  }
-
-
-
-
-  .icon.searchForm__inputQuantity-iconDown:before {
-      background-position: -0.2em -186.1em;
-      width: 1.4em;
-      height: 0.8em;
-  }
-
-
-
-
-  .icon.searchForm__inputQuantity-iconPerson:before {
-      background-position: -0.2em -187.29999999999998em;
-      width: 0.8em;
-      height: 1.8em;
-  }
-
-
-
-
-  .icon.services__item-iconInsurance:before {
-      background-position: -0.2em -189.5em;
-      width: 1.8em;
-      height: 2.1em;
-  }
-
-
-
-
-  .icon.services__item-iconReport:before {
-      background-position: -0.2em -192em;
-      width: 1.5em;
-      height: 1.9em;
-  }
-
-
-
-
-  .icon.services__item-iconResidence:before {
-      background-position: -0.2em -194.29999999999998em;
-      width: 2.2em;
-      height: 2.1em;
-  }
-
-
-
-
-  .icon.services__item-iconTicket:before {
-      background-position: -0.2em -196.79999999999998em;
-      width: 2.7em;
-      height: 2.5em;
-  }
-
-
-
-
-  .icon.services__item-iconTransfer:before {
-      background-position: -0.2em -199.7em;
-      width: 2.3em;
-      height: 1.8em;
   }
 
 

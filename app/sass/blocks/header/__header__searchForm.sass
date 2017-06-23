@@ -105,11 +105,6 @@
 .searchForm__inputQuantity-text
   @extend .searchForm__inputCityDeparture-text
 
-//.searchForm__inputQuantity-iconPerson
-  margin-right: 3px
-  float: left
-  margin-bottom: 7px
-
 .fa-male
   float: left
   color: rgb(180, 180, 180)
@@ -133,8 +128,14 @@
   box-shadow: none !important
   background: transparent !important
 
-.chosen-container-single .chosen-single div b
-  background: url(../img/searchForm__inputQuantity-iconDown.svg) no-repeat  0 9px
+.chosen-container-single .chosen-single div
+  padding-top: 9px
+
+  b
+    background: url(../img/png-sprite.png) no-repeat  -35px -5px
+
+.chosen-container-active.chosen-with-drop .chosen-single div b
+  background: url(../img/png-sprite.png) no-repeat  -35px -5px
 
 .chosen-drop
   border-top: 1px solid #aaa !important

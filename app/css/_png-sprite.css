@@ -1,0 +1,47 @@
+.sprite {
+  background-image: url(../img/png-sprite.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-eventually__list-mark {
+  width: 20px;
+  height: 20px;
+  background-position: -5px -5px;
+}
+
+.sprite-searchForm__inputQuantity-iconDown {
+  width: 14px;
+  height: 8px;
+  background-position: -35px -5px;
+}
+
+.sprite-services__item-iconInsurance {
+  width: 18px;
+  height: 21px;
+  background-position: -35px -23px;
+}
+
+.sprite-services__item-iconReport {
+  width: 15px;
+  height: 19px;
+  background-position: -5px -54px;
+}
+
+.sprite-services__item-iconResidence {
+  width: 22px;
+  height: 21px;
+  background-position: -63px -5px;
+}
+
+.sprite-services__item-iconTicket {
+  width: 27px;
+  height: 25px;
+  background-position: -63px -36px;
+}
+
+.sprite-services__item-iconTransfer {
+  width: 23px;
+  height: 18px;
+  background-position: -30px -71px;
+}
