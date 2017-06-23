@@ -3,7 +3,7 @@
   box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15)
 
 .searchForm__inputCityDeparture
-  text-align: initial
+  text-align: left
   float: left
   background: $white
   border-radius: 5px 0 0 5px
@@ -36,9 +36,21 @@
 
 .searchForm__inputCityDeparture-buttonReset
   @extend %btn-default
+  @extend %btn-animation
 
-.searchForm__inputCityDeparture-iconArrow
+.fa-times
+  font-size: 0.8rem
+  color: $fromWhiteToGrey
+  position: relative
+  top: -1p
+
+
+.fa-long-arrow-right
+  font-size: 1.38rem
+  line-height: 11px
+  color: $yellow
   float: right
+  margin-top: 3px
 
 .searchForm__inputCityArrive
   @extend .searchForm__inputCityDeparture
@@ -56,11 +68,6 @@
 .searchForm__inputCityArrive-buttonReset
   @extend .searchForm__inputCityDeparture-buttonReset
   visibility: hidden
-
-.searchForm__inputCityArrive-iconReset
-  @extend .searchForm__inputCityDeparture-iconReset
-  position: relative
-  top: -3px
 
 .searchForm__inputDate
   @extend .searchForm__inputCityArrive
@@ -80,9 +87,10 @@
 .searchForm__inputDate-inputDay
   @extend .searchForm__inputCityDeparture-inputText
   width: 92px
+  font-size: 0.938rem
+  letter-spacing: -0.5px
 
-.searchForm__inputDate-iconArrow
-  @extend .searchForm__inputCityDeparture-iconArrow
+._second
   margin-right: 19px
 
 .searchForm__inputDate-iconCalendar
@@ -97,20 +105,27 @@
 .searchForm__inputQuantity-text
   @extend .searchForm__inputCityDeparture-text
 
-.searchForm__inputQuantity-iconPerson
+//.searchForm__inputQuantity-iconPerson
   margin-right: 3px
   float: left
   margin-bottom: 7px
 
+.fa-male
+  float: left
+  color: rgb(180, 180, 180)
+  margin-bottom: 9px
+  margin-right: 1px
+
 .searchForm__inputQuantity-inputNumber
-  width: 175px
+  width: 173px
   font-size: 0.938rem
   color: $grey9
   border: none
   outline: none
 
 .chosen-container
-  font-size: inherit
+  font-size: 0.938rem
+  color: $grey9
 
 .chosen-single
   top: -3px
@@ -139,10 +154,10 @@
   color: $white
   text-transform: uppercase
   font-weight: 700
-  margin-right: 17px
+  margin-right: 14px
   letter-spacing: 1.32px
   line-height: 15px
 
-.icon.searchForm__buttonFind-iconEnter
-  float: right
-  margin-top: 3px
+.fa-chevron-right
+  font-size: 0.74rem
+  color: $white

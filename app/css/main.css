@@ -80,10 +80,12 @@ body {
   float: left;
   margin-top: 29px; }
 
-.greeting__header-infoIconPhone {
-  margin-right: 9px;
+.fa-phone {
+  margin-right: 6px;
+  color: #a1a1a1;
+  font-size: 0.96rem;
   position: relative;
-  top: -3px; }
+  top: -1px; }
 
 .greeting__header-infoNumber {
   display: inline-block;
@@ -102,22 +104,18 @@ body {
   margin-left: 25px; }
 
 .greeting__header-entrance {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   float: right;
   border-left: 1px solid #ebebeb;
   padding: 28px 13px 28px 25px; }
 
-.greeting__header-entranceIconLogin {
-  border: 2px solid black;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
-  padding: 5px;
-  position: relative;
-  top: -2px;
-  margin-right: 5px; }
-  .greeting__header-entranceIconLogin:before {
-    position: relative;
-    top: -2px; }
+.fa-user-circle-o {
+  margin-right: 10px;
+  color: #3f3f3f;
+  font-size: 1.7rem; }
 
 .greeting__header-entranceButton, .searchForm__inputCityDeparture-buttonReset, .searchForm__inputCityArrive-buttonReset, .searchForm__buttonFind, .complex__buttonStart, .anyDevice__buttonStart, .cooperation__buttonStart, .articles__buttonMore, .communication__form-buttonSend {
   border: none;
@@ -125,21 +123,24 @@ body {
   background: none;
   padding: 0; }
 
-.greeting__header-entranceButton:active, .searchForm__buttonFind:active, .complex__buttonStart:active, .anyDevice__buttonStart:active, .cooperation__buttonStart:active, .articles__buttonMore:active, .communication__form-buttonSend:active {
+.greeting__header-entranceButton:active, .searchForm__inputCityDeparture-buttonReset:active, .searchForm__inputCityArrive-buttonReset:active, .searchForm__buttonFind:active, .complex__buttonStart:active, .anyDevice__buttonStart:active, .cooperation__buttonStart:active, .articles__buttonMore:active, .communication__form-buttonSend:active {
   position: relative;
   top: 2px; }
 
 .greeting__header-entranceButton {
   font-size: 1rem;
-  color: #2c2c2c;
-  margin-top: 7px; }
+  color: #2c2c2c; }
   .greeting__header-entranceButton:hover {
-    opacity: 0.6; }
+    opacity: 0.7; }
+    .greeting__header-entranceButton:hover .fa-chevron-down {
+      visibility: visible; }
 
-.greeting__header-entranceButton-iconEnter {
-  margin-left: 4px;
+.fa-chevron-down {
+  font-size: 0.81rem;
+  margin-left: 5px;
   position: relative;
-  top: -3px; }
+  top: -2px;
+  visibility: hidden; }
 
 .greeting__presentation {
   text-align: center; }
@@ -177,7 +178,7 @@ body {
           box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.15); }
 
 .searchForm__inputCityDeparture, .searchForm__inputCityArrive, .searchForm__inputDate, .searchForm__inputQuantity {
-  text-align: initial;
+  text-align: left;
   float: left;
   background: white;
   -webkit-border-radius: 5px 0 0 5px;
@@ -206,8 +207,18 @@ body {
   .searchForm__inputCityDeparture-inputText:-ms-input-placeholder, .searchForm__inputCityArrive-inputText:-ms-input-placeholder, .searchForm__inputDate-inputDay:-ms-input-placeholder {
     color: #555555; }
 
-.searchForm__inputCityDeparture-iconArrow, .searchForm__inputDate-iconArrow {
-  float: right; }
+.fa-times {
+  font-size: 0.8rem;
+  color: #ced0da;
+  position: relative;
+  top: -1p; }
+
+.fa-long-arrow-right {
+  font-size: 1.38rem;
+  line-height: 11px;
+  color: #ffc816;
+  float: right;
+  margin-top: 3px; }
 
 .searchForm__inputCityArrive, .searchForm__inputDate, .searchForm__inputQuantity {
   -webkit-border-radius: 0;
@@ -221,10 +232,6 @@ body {
 .searchForm__inputCityArrive-buttonReset {
   visibility: hidden; }
 
-.searchForm__inputCityArrive-iconReset {
-  position: relative;
-  top: -3px; }
-
 .searchForm__inputDate {
   padding-right: 11px;
   border-left: 1px solid #e1e1e1;
@@ -235,9 +242,11 @@ body {
     float: left; }
 
 .searchForm__inputDate-inputDay {
-  width: 92px; }
+  width: 92px;
+  font-size: 0.938rem;
+  letter-spacing: -0.5px; }
 
-.searchForm__inputDate-iconArrow {
+._second {
   margin-right: 19px; }
 
 .searchForm__inputDate-iconCalendar {
@@ -248,20 +257,22 @@ body {
   padding-bottom: 5px;
   width: 207px; }
 
-.searchForm__inputQuantity-iconPerson {
-  margin-right: 3px;
+.fa-male {
   float: left;
-  margin-bottom: 7px; }
+  color: #b4b4b4;
+  margin-bottom: 9px;
+  margin-right: 1px; }
 
 .searchForm__inputQuantity-inputNumber {
-  width: 175px;
+  width: 173px;
   font-size: 0.938rem;
   color: #2c2c2c;
   border: none;
   outline: none; }
 
 .chosen-container {
-  font-size: inherit; }
+  font-size: 0.938rem;
+  color: #2c2c2c; }
 
 .chosen-single {
   top: -3px;
@@ -289,13 +300,13 @@ body {
   color: white;
   text-transform: uppercase;
   font-weight: 700;
-  margin-right: 17px;
+  margin-right: 14px;
   letter-spacing: 1.32px;
   line-height: 15px; }
 
-.icon.searchForm__buttonFind-iconEnter, .icon.complex__buttonStart-iconEnter, .icon.anyDevice__buttonStart-iconEnter, .icon.cooperation__buttonStart-iconEnter, .icon.articles__buttonMore-iconEnter, .icon.communication__form-buttonSend-iconEnter {
-  float: right;
-  margin-top: 3px; }
+.fa-chevron-right {
+  font-size: 0.74rem;
+  color: white; }
 
 .greeting__socials {
   position: absolute;
@@ -317,10 +328,19 @@ body {
             justify-content: center;
     width: 32px;
     height: 32px;
-    border: 1px solid white;
+    border: 1px solid #f9f9f9;
     -webkit-border-radius: 100%;
             border-radius: 100%;
     margin-bottom: 12px; }
+    .greeting__socials .wrapper .fa {
+      color: #f9f9f9; }
+    .greeting__socials .wrapper .fa-twitter {
+      font-size: 0.94rem; }
+    .greeting__socials .wrapper .fa-facebook {
+      font-size: 0.88rem;
+      margin-left: -1px; }
+    .greeting__socials .wrapper .fa-google-plus {
+      font-size: 0.83rem; }
     .greeting__socials .wrapper:hover {
       border: 1px solid #ff7800; }
 
@@ -1073,12 +1093,12 @@ body {
   width: 0.7em;
   height: 1.1em; }
 
-.icon.searchForm__inputCityDeparture-iconArrow:before, .icon.searchForm__inputDate-iconArrow:before {
+.icon.searchForm__inputCityDeparture-iconArrow:before {
   background-position: -0.2em -180.79999999999998em;
   width: 2.2em;
   height: 1.5em; }
 
-.icon.searchForm__inputCityDeparture-iconReset:before, .icon.searchForm__inputCityArrive-iconReset:before {
+.icon.searchForm__inputCityDeparture-iconReset:before {
   background-position: -0.2em -182.7em;
   width: 1em;
   height: 1em; }
@@ -1263,7 +1283,7 @@ body {
     font-size: 0.813rem; }
   .greeting__header-entrance {
     padding-top: 21px;
-    padding-bottom: 25px; }
+    padding-bottom: 22px; }
   .greeting__presentationText {
     margin-top: 75px;
     font-size: 0.815rem;
@@ -1302,7 +1322,7 @@ body {
     padding: 10px 16px 13px; }
     .searchForm__inputDate .wrap_there, .searchForm__inputDate .wrap_back {
       width: 50%; }
-    .searchForm__inputDate .searchForm__inputDate-iconArrow {
+    .searchForm__inputDate ._second {
       margin-right: 0; }
     .searchForm__inputDate .wrap_back {
       padding-left: 55px; }
@@ -1327,15 +1347,13 @@ body {
     padding: 0;
     vertical-align: middle; }
   .searchForm__buttonFind-text, .complex__buttonStart-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text, .communication__form-buttonSend-text {
-    margin-right: 0; }
+    margin-right: 0;
+    margin-left: 8px; }
   .searchForm__buttonFind-text.visible-sm, .visible-sm.complex__buttonStart-text, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text, .visible-sm.articles__buttonMore-text, .visible-sm.communication__form-buttonSend-text {
-    display: inline !important; }
-  .searchForm__buttonFind-iconEnter, .complex__buttonStart-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter, .communication__form-buttonSend-iconEnter {
-    float: inherit !important;
-    margin-top: 0 !important;
-    margin-left: 27px;
-    position: relative;
-    top: -2px; }
+    display: inline !important;
+    margin-left: 0; }
+  .fa-chevron-right {
+    margin-left: 27px; }
   .services {
     display: block;
     margin-bottom: 72px; }
@@ -1690,8 +1708,8 @@ body {
     clear: both; }
   .wrap_there, .wrap_back {
     width: 50%; }
-  .searchForm__inputDate-iconArrow {
-    margin-right: 14px; }
+  ._second {
+    margin-right: 9px; }
   .wrap_back {
     padding-left: 15px; }
   .searchForm__inputQuantity {
@@ -1716,11 +1734,13 @@ body {
     float: left;
     clear: both; }
   .searchForm__buttonFind-text, .complex__buttonStart-text, .anyDevice__buttonStart-text, .cooperation__buttonStart-text, .articles__buttonMore-text, .communication__form-buttonSend-text {
-    margin-right: 0; }
+    margin-right: 0;
+    margin-left: 8px; }
   .searchForm__buttonFind-text.visible-sm, .visible-sm.complex__buttonStart-text, .visible-sm.anyDevice__buttonStart-text, .visible-sm.cooperation__buttonStart-text, .visible-sm.articles__buttonMore-text, .visible-sm.communication__form-buttonSend-text {
-    display: inline !important; }
-  .searchForm__buttonFind-iconEnter, .complex__buttonStart-iconEnter, .anyDevice__buttonStart-iconEnter, .cooperation__buttonStart-iconEnter, .articles__buttonMore-iconEnter, .communication__form-buttonSend-iconEnter {
-    margin-right: 15px; }
+    display: inline !important;
+    margin-left: 0; }
+  .fa-chevron-right {
+    margin-left: 27px; }
   .services {
     display: block;
     margin: 21px auto 41px;

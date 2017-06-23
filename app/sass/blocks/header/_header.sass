@@ -43,10 +43,12 @@
   float: left
   margin-top: 29px
 
-.greeting__header-infoIconPhone
-  margin-right: 9px
+.fa-phone
+  margin-right: 6px
+  color: $grey2
+  font-size: 0.96rem
   position: relative
-  top: -3px
+  top: -1px
 
 .greeting__header-infoNumber
   display: inline-block
@@ -65,22 +67,16 @@
   margin-left: 25px
 
 .greeting__header-entrance
-  display: inline-block
+  display: inline-flex
   float: right
   border-left: 1px solid $darkWhite
   padding: 28px 13px 28px 25px
 
-.greeting__header-entranceIconLogin
-  border: 2px solid $black
-  border-radius: 100%
-  padding: 5px
-  position: relative
-  top: -2px
-  margin-right: 5px
+.fa-user-circle-o
+  margin-right: 10px
+  color: $grey7
+  font-size: 1.7rem
 
-  &:before
-    position: relative
-    top: -2px
 
 %btn-default
   border: none
@@ -99,15 +95,18 @@
   @extend %btn-animation
   font-size: 1rem
   color: $grey9
-  margin-top: 7px
 
   &:hover
-    opacity: 0.6
+    opacity: 0.7
+    .fa-chevron-down
+      visibility: visible
 
-.greeting__header-entranceButton-iconEnter
-  margin-left: 4px
+.fa-chevron-down
+  font-size: 0.81rem
+  margin-left: 5px
   position: relative
-  top: -3px
+  top: -2px
+  visibility: hidden
 
 .greeting__presentation
   text-align: center
@@ -154,9 +153,22 @@
     justify-content: center
     width: 32px
     height: 32px
-    border: 1px solid $white
+    border: 1px solid $preMediumWhite
     border-radius: 100%
     margin-bottom: 12px
+
+    .fa
+      color: $preMediumWhite
+
+    .fa-twitter
+      font-size: 0.94rem
+
+    .fa-facebook
+      font-size: 0.88rem
+      margin-left: -1px
+
+    .fa-google-plus
+      font-size: 0.83rem
 
     &:hover
       border: 1px solid $orange

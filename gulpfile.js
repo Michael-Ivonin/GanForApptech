@@ -95,13 +95,14 @@ gulp.task('watch', ['browser-sync', 'pug', 'css-libs', 'icons-jQueryUi', 'icons-
 gulp.task('svg', function() {
   return gulp.src('./app/img/svg/*.svg')
     .pipe(svgSprite({
-      svg: {
+      mode: 'symbols',
+      /*svg: {
         sprite: '../img/svg-sprite.svg'
-      },
-      preview: {
+      },*/
+      /*preview: {
         sprite: 'svg-sprite.html'
-      },
-      cssFile: '../css/_svg-sprite.css',
+      },*/
+      //cssFile: '../css/_svg-sprite.css',
       svgPath: '%f',
       pngPath: '%f',
       padding: 2

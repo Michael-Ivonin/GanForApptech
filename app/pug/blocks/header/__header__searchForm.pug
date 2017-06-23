@@ -3,9 +3,9 @@ form.searchForm
     label.searchForm__inputCityDeparture-text(for='inputCity1') Город отправления
     br
     input.searchForm__inputCityDeparture-inputText(type='text', placeholder='Омск', id='inputCity1', required)
-    span.icon.searchForm__inputCityDeparture-iconArrow.hidden-xs
+    i.fa.fa-long-arrow-right.hidden-xs(aria-hidden='true')
     button.searchForm__inputCityDeparture-buttonReset.visible-xs(type='button')
-      span.icon.searchForm__inputCityDeparture-iconReset
+      i.fa.fa-times(aria-hidden='true')
   // /.searchForm__inputCityDeparture
   br.visible-xs
   .searchForm__inputCityArrive
@@ -13,7 +13,7 @@ form.searchForm
     br
     input.searchForm__inputCityArrive-inputText(type='text', placeholder='Москва', id='inputCity2', required)
     button.searchForm__inputCityArrive-buttonReset(type='button')
-      span.icon.searchForm__inputCityArrive-iconReset
+      i.fa.fa-times(aria-hidden='true')
   // /.searchForm__inputCityArrive
   br.visible-sm.visible-xs
   .searchForm__inputDate
@@ -21,7 +21,7 @@ form.searchForm
       label.searchForm__inputDate-text(for='there') Туда
       br
       input.searchForm__inputDate-inputDay(type='text', placeholder='06.03.2017', id='there', required)
-      span.icon.searchForm__inputDate-iconArrow
+      i.fa.fa-long-arrow-right._second
     // /.wrap_there
     .wrap_back
       label.searchForm__inputDate-text(for='back') Обратно
@@ -34,7 +34,7 @@ form.searchForm
   .searchForm__inputQuantity
     label.searchForm__inputQuantity-text Сотрудников
     br
-    span.icon.searchForm__inputQuantity-iconPerson
+    i.fa.fa-male(aria-hidden='true')
     select.searchForm__inputQuantity-inputNumber(required)
       option.searchForm__inputQuantity-inputNumber-item 1
       option.searchForm__inputQuantity-inputNumber-item(selected) 2
@@ -47,6 +47,6 @@ form.searchForm
   button.searchForm__buttonFind(type='submit')
     span.searchForm__buttonFind-text Подобрать
     span.searchForm__buttonFind-text.visible-sm.visible-xs Варианты
-    span.icon.searchForm__buttonFind-iconEnter
+    i.fa.fa-chevron-right(aria-hidden='true')
   // /.searchForm__buttonFind
 // /.searchForm
